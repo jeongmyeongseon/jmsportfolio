@@ -1,0 +1,439 @@
+@charset "utf-8";
+
+@media (min-width: 800px) {
+    .slider {
+        background-image: url("../img/sub_slider.jpg");
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /*****art*****/
+    section .art {
+        width: 100%;
+        background-color: #18082F;
+    }
+
+    section .art .art_box {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    section .art .art_box .art_title {
+        text-align: center;
+        padding: 2.8% 0% 4% 0%;
+    }
+
+    section .art .art_box .art_title h1 {
+        color: #fff;
+        font-size: 40px;
+        line-height: 80px;
+    }
+
+    section .art .art_box .art_title h4 {
+        line-height: 80px;
+        color: #fff;
+    }
+
+    /*****art_photo_box*****/
+    section .art .art_box .art_photo_box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    section .art .art_box .art_photo_box .art_img {
+        width: 45%;
+        height: 400px;
+    }
+
+    section .art .art_box .art_photo_box .art_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section .art .art_box .art_photo_box .art_text {
+        width: 55%;
+        float: right;
+    }
+
+    section .art .art_box .art_photo_box .art_text h3 {
+        padding-left: 50px;
+        font-size: 28px;
+        color: #fff;
+    }
+
+    section .art .art_box .art_photo_box .art_text p {
+        padding: 50px 0px 55px 50px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    section .art .art_box .art_photo_box .art_text img {
+        padding-left: 50px;
+    }
+
+    /*****art_photo_box2*****/
+    section .art .art_box .art_photo_box2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 50px 0px;
+    }
+
+    section .art .art_box .art_photo_box2 .art_img {
+        width: 45%;
+        height: 400px;
+    }
+
+    section .art .art_box .art_photo_box2 .art_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section .art .art_box .art_photo_box2 .art_text {
+        width: 55%;
+        float: right;
+    }
+
+    section .art .art_box .art_photo_box2 .art_text h3 {
+        font-size: 28px;
+        color: #fff;
+    }
+
+    section .art .art_box .art_photo_box2 .art_text p {
+        padding: 50px 0px 80px 0px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+
+    /*****show*****/
+    section .show {
+        width: 100%;
+        background-color: #18082F;
+    }
+
+    section .show .show_box {
+        width: 100%;
+        height: 950px;
+        margin: 0 auto;
+    }
+
+    section .show .show_box h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        line-height: 100px;
+        padding-top: 100px;
+    }
+
+    section .show .show_box h4 {
+        padding-bottom: 80px;
+        text-align: center;
+        color: #fff;
+    }
+
+    section .show .show_box table {
+        width: 100%;
+        height: 500px;
+    }
+
+    section .show .show_box table tr {
+        cursor: pointer;
+    }
+
+    section .show .show_box table tr th {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        text-align: center;
+    }
+
+    section .show .show_box table tr td {
+        text-align: center;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+    section .show .show_box table tr td img {
+        width: 100px;
+        height: 100px;
+    }
+
+    section .show .show_box table tr td button {
+        width: 140px;
+        height: 50px;
+        border-radius: 40px;
+        color: #fff;
+        font-weight: bold;
+        border: 2px solid #fff;
+        cursor: pointer;
+        background: linear-gradient(135deg, #3a0766, #bd1779);
+    }
+
+    section .show .show_box table tr td:nth-child(3) {
+        text-align: left;
+    }
+
+    section .show .show_box table tr:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+
+    /*****band*****/
+    section .band {
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    section .band .band_box {
+        width: 31%;
+        height: 60%;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    section .band .band_box .band_text {
+        width: 100%;
+        height: 30%;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-top: 210px;
+        color: #fff;
+    }
+
+    section .band .band_box .band_text h4 {
+        padding: 15px 0px 15px 20px;
+        font-weight: 600;
+    }
+
+    section .band .band_box .band_text p {
+        padding-left: 20px;
+    }
+
+    section .band .band_box .band_text i {
+        font-size: 55px;
+        position: relative;
+        bottom: 55px;
+        left: 76%;
+    }
+
+    section .band .band_box .band_text:hover {
+        background-color: #bd1778;
+    }
+
+    section .band .band_box:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    section .band .band_box:nth-child(1) {
+        background-image: url("../img/band1.jpg");
+    }
+
+    section .band .band_box:nth-child(2) {
+        background-image: url("../img/band2.jpg");
+    }
+
+    section .band .band_box:nth-child(3) {
+        background-image: url("../img/band3.jpg");
+    }
+
+
+    /*****play*****/
+    section .play {
+        width: 100%;
+        height: 1900px;
+        background-image: url("../img/play_back.jpg");
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    section .play .playing {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    section .play .playing .playing_box {
+        width: 70%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        top: 470px;
+    }
+
+    section .play .playing .playing_box .play_img_box {
+        width: 45%;
+        height: 560px;
+    }
+
+    section .play .playing .playing_box .play_img_box img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section .play .playing .playing_box .playing_table_box {
+        width: 55%;
+        height: 560px;
+        background-color: #27203F;
+    }
+
+    section .play .playing .playing_box .playing_table_box p {
+        font-size: 15px;
+        color: #fff;
+        padding: 20px 0px 10px 20px;
+    }
+
+    section .play .playing .playing_box .playing_table_box h5 {
+        font-size: 17px;
+        color: #fff;
+        padding-left: 20px;
+    }
+
+    section .play .playing .playing_box .playing_table_box button {
+        width: 35%;
+        padding: 12.5px 0px;
+        background: linear-gradient(135deg, #3a0766, #bd1779);
+        border: none;
+        color: #fff;
+        position: relative;
+        left: 64%;
+        bottom: 50px;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    section .play .playing .playing_box .playing_table_box table {
+        width: 100%;
+        height: 55%;
+        color: gray;
+        cursor: pointer;
+    }
+
+    section .play .playing .playing_box .playing_table_box table tr:hover {
+        opacity: 0.5;
+    }
+
+    section .play .playing .playing_box .playing_table_box table td:nth-child(1) {
+        text-align: right;
+    }
+
+    section .play .playing .playing_box .playing_table_box table td:nth-child(1) i {
+        color: #bd1778;
+        text-align: right;
+    }
+
+    section .play .playing .playing_box .playing_table_box table td:nth-child(2) {
+        padding-left: 20px;
+    }
+
+    section .play .playing .playing_box .playing_table_box table td:nth-child(3) {
+        padding-right: 10px;
+        color: #fff;
+    }
+
+    section .play .playing .playing_box .playing_table_box .drop {
+        width: 100%;
+        height: 105px;
+        background-color: #1C1632;
+        margin-top: 38px;
+    }
+
+    section .play .playing .playing_box .playing_table_box .drop i {
+        color: #fff;
+        position: relative;
+        left: 70%;
+        bottom: 50px;
+        font-size: 55px;
+        cursor: pointer;
+    }
+
+    section .play .playing .playing_box .playing_table_box .drop i:hover {
+        color: #bd1779;
+    }
+
+    section .play .playing .playing_box .playing_table_box .drop span {
+        color: #1C1632;
+        font-size: 5px;
+        position: relative;
+        left: 69%;
+        bottom: 50%;
+    }
+
+    section .play .music {
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+        position: relative;
+        top: 640px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    section .play .music .search_box {
+        width: 40%;
+        height: 85%;
+        background-size: cover;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    section .play .music .search_box h1 {
+        color: #fff;
+        font-size: 50px;
+    }
+
+    section .play .music .search_box p {
+        color: #fff;
+        font-size: 25px;
+    }
+
+    section .play .music .search_box:nth-child(1) {
+        background-image: url("../img/play_music.jpg");
+    }
+
+    section .play .music .search_box:nth-child(1):hover {
+        background: rgba(189, 23, 120, 0.5);
+    }
+
+    section .play .music .search_box:nth-child(2) {
+        background-image: url("../img/play_artist.jpg");
+    }
+
+    section .play .music .search_box:nth-child(2):hover {
+        background: rgba(189, 23, 120, 0.5);
+    }
+}
