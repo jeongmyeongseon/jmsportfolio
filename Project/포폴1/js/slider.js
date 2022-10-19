@@ -1,156 +1,52 @@
-let slide = document.querySelector(".slide");
-let slideWidth = slide.clientWidth;
+$(function () {
+    let slide_count = 0;
 
-let prevBtn = document.querySelector(".prev_btn");
-let nextBtn = document.querySelector(".next_btn");
-
-let slideItems = document.querySelectorAll(".slider");
-let maxSlide = slideItems.length;
-let currSlide = 1;
-
-const startSlide = slideItems[0];
-const endSlide = slideItems[slideItems.length - 1];
-const startElem = document.createElement("li");
-const endElem = document.createElement("li");
-
-endSlide.classList.forEach((c) => endElem.classList.add(c));
-endElem.innerHTML = endSlide.innerHTML;
-
-startSlide.classList.forEach((c) => startElem.classList.add(c));
-startElem.innerHTML = startSlide.innerHTML;
-
-slideItems[0].before(endElem);
-slideItems[slideItems.length - 1].after(startElem);
-
-slideItems = document.querySelectorAll(".slider");
-let offset = slideWidth + currSlide;
-slideItems.forEach((i) => {
-    i.setAttribute("style", `left: ${-offset}px`);
-});
-
-function nextMove() {
-    currSlide++;
-    // 마지막 슬라이드 이상으로 넘어가지 않게 하기 위해서
-    if (currSlide <= maxSlide) {
-        // 슬라이드를 이동시키기 위한 offset 계산
-        const offset = slideWidth * currSlide;
-        // 각 슬라이드 아이템의 left에 offset 적용
-        slideItems.forEach((i) => {
-            i.setAttribute("style", `left: ${-offset}px`);
-        });
-    } else {
-        // 무한 슬라이드 기능 - currSlide 값만 변경해줘도 되지만 시각적으로 자연스럽게 하기 위해 아래 코드 작성
-        currSlide = 0;
-        let offset = slideWidth * currSlide;
-        slideItems.forEach((i) => {
-            i.setAttribute("style", `transition: ${0}s; left: ${-offset}px`);
-        });
-        currSlide++;
-        offset = slideWidth * currSlide;
-        // 각 슬라이드 아이템의 left에 offset 적용
-        setTimeout(() => {
-            // 각 슬라이드 아이템의 left에 offset 적용
-            slideItems.forEach((i) => {
-                // i.setAttribute("style", `transition: ${0}s; left: ${-offset}px`);
-                i.setAttribute("style", `transition: ${0.15}s; left: ${-offset}px`);
-            });
-        }, 0);
+    //자동적으로 slider를 움직이기 위한 함수
+    function slide_move() {
+        slide_count++;
+        $('.slider').stop().animate({ marginLeft: -1800 }, 700, function () {
+            $('.slider > li:first').appendTo(".slider");
+            $('.slider').css({ marginLeft: 0 });
+        }); 
+        if (slide_count > $('.slider > li:last').index()) {
+            slide_count = 0;
+        };
     }
-}
-function prevMove() {
-    currSlide--;
-    // 1번째 슬라이드 이하로 넘어가지 않게 하기 위해서
-    if (currSlide > 0) {
-        // 슬라이드를 이동시키기 위한 offset 계산
-        const offset = slideWidth * currSlide;
-        // 각 슬라이드 아이템의 left에 offset 적용
-        slideItems.forEach((i) => {
-            i.setAttribute("style", `left: ${-offset}px`);
+    let resetIn = setInterval(slide_move, 6000);
+
+    //prev 버튼을 누르면 실행되는 함수
+    function slide_prev() {
+        //clearInterval 비 사용시 interval의 이동과 클릭시 이동이 겹쳐지면서 오류가 발생 그것을 막기위해 정지후 다시 interval을 줌
+        clearInterval(resetIn);
+        resetIn = setInterval(slide_move, 6000);
+        slide_count--;
+        if (slide_count < 0) {
+            slide_count = 2;
+        }
+        $('.slider > li:last').prependTo(".slider");
+        $('.slider').css({ marginLeft: -1800 });
+        $('.slider').stop().animate({ marginLeft: 0 }, 700);
+
+    }
+    //next 버튼을 누르면 실행되는 함수
+    function slide_next() {
+        clearInterval(resetIn);
+        resetIn = setInterval(slide_move, 6000);
+        $('.slider').stop().animate({ marginLeft: -1800 }, 700, function () {
+            slide_count++;
+            if (slide_count > $('.slider > li:last').index()) {
+                slide_count = 0;
+            };
+            $('.slider > li:first').appendTo(".slider");
+            $('.slider').css({ marginLeft: 0 });
         });
-    } else {
-        // 무한 슬라이드 기능 - currSlide 값만 변경해줘도 되지만 시각적으로 자연스럽게 하기 위해 아래 코드 작성
-        currSlide = maxSlide + 1;
-        let offset = slideWidth * currSlide;
-        // 각 슬라이드 아이템의 left에 offset 적용
-        slideItems.forEach((i) => {
-            i.setAttribute("style", `transition: ${0}s; left: ${-offset}px`);
-        });
-        currSlide--;
-        offset = slideWidth * currSlide;
-        setTimeout(() => {
-            // 각 슬라이드 아이템의 left에 offset 적용
-            slideItems.forEach((i) => {
-                // i.setAttribute("style", `transition: ${0}s; left: ${-offset}px`);
-                i.setAttribute("style", `transition: ${0.15}s; left: ${-offset}px`);
-            });
-        }, 0);
     }
-}
 
-// 버튼 엘리먼트에 클릭 이벤트 추가하기
-nextBtn.addEventListener("click", () => {
-    // 이후 버튼 누를 경우 현재 슬라이드를 변경
-    nextMove();
-});
-// 버튼 엘리먼트에 클릭 이벤트 추가하기
-prevBtn.addEventListener("click", () => {
-    // 이전 버튼 누를 경우 현재 슬라이드를 변경
-    prevMove();
-});
-
-// 브라우저 화면이 조정될 때 마다 slideWidth를 변경하기 위해
-window.addEventListener("resize", () => {
-    slideWidth = slide.clientWidth;
-});
-
-// 드래그(스와이프) 이벤트를 위한 변수 초기화
-let startPoint = 0;
-let endPoint = 0;
-
-// PC 클릭 이벤트 (드래그)
-slide.addEventListener("mousedown", (e) => {
-    startPoint = e.pageX; // 마우스 드래그 시작 위치 저장
-});
-
-slide.addEventListener("mouseup", (e) => {
-    endPoint = e.pageX; // 마우스 드래그 끝 위치 저장
-    if (startPoint < endPoint) {
-        // 마우스가 오른쪽으로 드래그 된 경우
-        prevMove();
-    } else if (startPoint > endPoint) {
-        // 마우스가 왼쪽으로 드래그 된 경우
-        nextMove();
-    }
-});
-
-// 모바일 터치 이벤트 (스와이프)
-slide.addEventListener("touchstart", (e) => {
-    startPoint = e.touches[0].pageX; // 터치가 시작되는 위치 저장
-});
-slide.addEventListener("touchend", (e) => {
-    endPoint = e.changedTouches[0].pageX; // 터치가 끝나는 위치 저장
-    if (startPoint < endPoint) {
-        // 오른쪽으로 스와이프 된 경우
-        prevMove();
-    } else if (startPoint > endPoint) {
-        // 왼쪽으로 스와이프 된 경우
-        nextMove();
-    }
-});
-
-// 기본적으로 슬라이드 루프 시작하기
-let loopInterval = setInterval(() => {
-    nextMove();
-}, 3000);
-
-// 슬라이드에 마우스가 올라간 경우 루프 멈추기
-slide.addEventListener("mouseover", () => {
-    clearInterval(loopInterval);
-});
-
-// 슬라이드에서 마우스가 나온 경우 루프 재시작하기
-slide.addEventListener("mouseout", () => {
-    loopInterval = setInterval(() => {
-        nextMove();
-    }, 3000);
+    //함수 실행을 위해 click 이벤트 발생시 실행함수를 불러오기위한 함수
+    $('.prev').click(function () {
+        slide_prev();
+    });
+    $('.next').click(function () {
+        slide_next();
+    });
 });

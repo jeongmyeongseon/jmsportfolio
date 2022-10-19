@@ -230,16 +230,15 @@ aside {
 
 /*point color*/
 .first>li:first-child {
-  background-color: #0064ff;
+  background-color: #f2ece0;
 }
 
 .first>li:nth-child(2) {
-  background-color: #000;
+  background-color: #a1785c;
 }
 
 .first>li:last-child {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #c1e9e9;
 }
 
 .second>li:first-child {
@@ -255,15 +254,16 @@ aside {
 }
 
 .third>li:first-child {
-  background-color: #f2ece0;
+  background-color: #0064ff;
 }
 
 .third>li:nth-child(2) {
-  background-color: #a1785c;
+  background-color: #000;
 }
 
 .third>li:last-child {
-  background-color: #c1e9e9;
+  background-color: #fff;
+  border: 1px solid #ccc;
 }
 
 .fourth>li:first-child {
@@ -291,12 +291,12 @@ aside {
 }
 
 .pro_text>.btn1 {
-  background-color: #0064ff;
+  background-color: #a1785c;
   color: #fff;
 }
 
 .pro_text>.btn1:hover {
-  background-color: #ddd;
+  background-color: #c1e9e9;
   color: #000;
 }
 
@@ -311,12 +311,12 @@ aside {
 }
 
 .pro_text>.btn3 {
-  background-color: #a1785c;
+  background-color: #0064ff;
   color: #fff;
 }
 
 .pro_text>.btn3:hover {
-  background-color: #c1e9e9;
+  background-color: #ddd;
   color: #000;
 }
 

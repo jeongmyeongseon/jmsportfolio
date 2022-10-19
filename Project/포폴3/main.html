@@ -1,688 +1,1243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/coomon.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
     <div id="wrap">
-        <!----HEADER---->
         <header>
-            <div class="header_fixed_wrap">
-                <div class="header_container">
-                    <div class="top_menu">
-                        <ul>
-                            <li>LOGIN</li>
-                            <li>JOIN</li>
-                            <li>NEWS</li>
+            <nav id="upper_nav">
+                <div class="upper_nav_center">
+                    <ul class="sort">
+                        <li><a href="">웹툰/만화</a></li>
+                        <li>&middot;</li>
+                        <li><a href="">웹소설</a></li>
+                        <li>&middot;</li>
+                        <li><a href="" style="color: #141414;">도서</a></li>
+                        <li>&middot;</li>
+                        <li><a href="">셀렉트</a></li>
+                    </ul>
+
+                    <ul class="login">
+                        <li><a href="">회원가입</a></li>
+                        <li>&middot;</li>
+                        <li><a href="">로그인</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <nav id="lower_nav">
+                <div class="title_box">
+                    <div class="logo"><img src="img/logo.jpg" alt=""></div>
+                    <div class="title">
+                        <h1>도서</h1>
+                    </div>
+                </div>
+                <div class="category_box">
+                    <div class="mypage">
+                        <div class="search">
+                            <a href=""><img src="img/search.png" alt=""></a>
+                            <input type="text">
+                        </div>
+                        <ul class="ball_icon">
+                            <li><img src="img/1.jpg" alt="종"></li>
+                            <li><img src="img/2.jpg" alt="장바구니"></li>
+                            <li><img src="img/3.jpg" alt="책"></li>
+                            <li><img src="img/4.jpg" alt="마이페이지"></li>
                         </ul>
                     </div>
-                    <div class="lower_menu">
-                        <div class="logo">
-                            <img src="./img/logo.png" alt="logo">
-                        </div>
-                        <div class="menu">
-                            <nav>
-                                <ul>
-                                    <li class="sub_nav"><a href="#" class="sub_title" onclick="closeNav()">FURNITURE</a>
-                                        <ul class="sub_list" style="padding-left: 39%;">
-                                            <li><a href="#" class="sub_list1">CHAIR</a></li>
-                                            <li><a href="#" class="sub_list1">TABLE</a></li>
-                                            <li><a href="#" class="sub_list1">SOFA</a></li>
-                                            <li><a href="#" class="sub_list1">SIDEBOARD</a></li>
-                                            <li><a href="#" class="sub_list1">STRING SYSTEM</a></li>
-                                        </ul>
-                                    </li>
-    
-                                    <li class="sub_nav"><a href="#" class="sub_title">LIGHING</a>
-                                        <ul class="sub_list" style="padding-left: 43%;">
-                                            <li><a href="#" class="sub_list1">PENDANT</a></li>
-                                            <li><a href="#" class="sub_list1">FLOOR</a></li>
-                                            <li><a href="#" class="sub_list1">TABLE</a></li>
-                                            <li><a href="#" class="sub_list1">WALL</a></li>
-                                        </ul>
-                                    </li>
-    
-                                    <li class="sub_nav"><a href="#" class="sub_title">HOMEDECO</a>
-                                        <ul class="sub_list" style="padding-left: 32%;">
-                                            <li><a href="#" class="sub_list1">VASE</a></li>
-                                            <li><a href="#" class="sub_list1">HOOK</a></li>
-                                            <li><a href="#" class="sub_list1">CANDLE</a></li>
-                                            <li><a href="#" class="sub_list1">STORAGE</a></li>
-                                            <li><a href="#" class="sub_list1">MOBILE</a></li>
-                                            <li><a href="#" class="sub_list1">MIRROR</a></li>
-                                            <li><a href="#" class="sub_list1">FABRIC</a></li>
-                                            <li><a href="#" class="sub_list1">OFFICE</a></li>
-                                            <li><a href="#" class="sub_list1">KITCHEN</a></li>
-                                        </ul>
-                                    </li>
-    
-                                    <li class="sub_nav"><a href="#" class="sub_title">KIDS</a>
-                                        <ul class="sub_list" style="padding-left: 41%;">
-                                            <li><a href="#" class="sub_list1">FURNITURE</a></li>
-                                            <li><a href="#" class="sub_list1">TOY</a></li>
-                                            <li><a href="#" class="sub_list1">FABRIC</a></li>
-                                            <li><a href="#" class="sub_list1">MOBILE</a></li>
-                                            <li><a href="#" class="sub_list1">ACC</a></li>
-                                        </ul>
-                                    </li>
-    
-                                    <li class="sub_nav"><a href="#" class="sub_title">PETS</a></li>
-                                    <li class="sub_nav"><a href="#" class="sub_title">BRANDS</a></li>
-                                    <li class="sub_nav"><a href="#" class="sub_title">REVIEW</a></li>
-    
-                                    <li class="sub_nav"><a href="#" class="sub_title">OUTLET</a>
-                                        <ul class="sub_list" style="padding-left: 40%;">
-                                            <li><a href="#" class="sub_list1">DISPLAY GOODS</a></li>
-                                            <li><a href="#" class="sub_list1">REFURB</a></li>
-                                            <li><a href="#" class="sub_list1">PROMOTION</a></li>
-                                            <li><a href="#" class="sub_list1">PERSONAL</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="icon_menu">
-                            <img src="./img/icon_1.png" alt="icon_1">
-                            <img src="./img/icon_2.png" alt="icon_2">
-                            <img src="./img/icon_3.png" alt="icon_3">
-                        </div>
+                    <div class="category">
+                        <a href="">
+                            <img src="img/33.png" alt="">
+                            <span class="category_text">전체 카테고리</span>
+                        </a>
                     </div>
                 </div>
-            </div>
+            </nav>
+
+            <nav id="bottom_nav">
+                <ul>
+                    <li><a href="" style="color:aliceblue">추천</a></li>
+                    <li><a href="">리디ONLY</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">대여</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <!----MAIN SLIDER---->
-        <div class="main_slider">
-            <div class="slider_wrap">
-                <ul class="slider">
-                    <li><img src="./img/slider_1.jpg" alt="slider1"></li>
-                    <li><img src="./img/slider_2.jpg" alt="slider2"></li>
-                    <li><img src="./img/slider_3.jpg" alt="slider3"></li>
-                    <li><img src="./img/slider_4.jpg" alt="slider4"></li>
-                    <li><img src="./img/slider_5.jpg" alt="slider5"></li>
-                    <li><img src="./img/slider_6.jpg" alt="slider6"></li>
-                    <li><img src="./img/slider_7.jpg" alt="slider7"></li>
-                    <li><img src="./img/slider_8.jpg" alt="slider8"></li>
-                    <li><img src="./img/slider_9.jpg" alt="slider9"></li>
+        <section>
+            <!------------ SLIDER ------------>
+            <div class="slider">
+                <ul>
+                    <li class="slide">
+                        <img src="./img/slider1.jpg" alt="slider1">
+                        <div class="slider_textbox">
+                            <div class="minibox">
+                                <img src="./img/대여.png" alt="대여">
+                            </div>
+                            <h1 class="slider_title">
+                                9월에도 다 되는 <br>
+                                다대여 책방과 함께
+                            </h1>
+                            <p class="slider_desc">
+                                새로운 신간&베스트셀러로 찾아왔어요!
+                            </p>
+                        </div>
+                        <div class="slider_numder">
+                            <p><span>1</span>/10</p>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider2.webp" alt="slider2">
+                        <div class="slider_textbox">
+                            <div class="minibox"></div>
+                            <h1 class="slider_title"></h1>
+                            <p class="slider_desc"></p>
+                        </div>
+                        <div class="slider_numder"></div>
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider3.webp" alt="slider3">
+                        <div class="slider_textbox">
+                            <div class="minibox"></div>
+                            <h1 class="slider_title"></h1>
+                            <p class="slider_desc"></p>
+                        </div>
+                        <div class="slider_numder"></div>
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider4.webp" alt="slider4">
+                        <div class="slider_textbox">
+                            <div class="minibox"></div>
+                            <h1 class="slider_title"></h1>
+                            <p class="slider_desc"></p>
+                        </div>
+                        <div class="slider_numder"></div>
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider5.webp" alt="slider5">
+                        <div class="slider_textbox">
+                            <div class="minibox"></div>
+                            <h1 class="slider_title"></h1>
+                            <p class="slider_desc"></p>
+                        </div>
+                        <div class="slider_numder"></div>
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider6.webp" alt="slider6">
+                        <div class="slider_textbox">
+                            <div class="minibox"></div>
+                            <h1 class="slider_title"></h1>
+                            <p class="slider_desc"></p>
+                        </div>
+                        <div class="slider_numder"></div>
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider7.webp" alt="slider7">
+                        <div class="slider_textbox">
+                            <div class="minibox"></div>
+                            <h1 class="slider_title"></h1>
+                            <p class="slider_desc"></p>
+                        </div>
+                        <div class="slider_numder"></div>
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider8.webp" alt="slider8">
+                        <div class="slider_textbox">
+                            <div class="minibox"></div>
+                            <h1 class="slider_title"></h1>
+                            <p class="slider_desc"></p>
+                        </div>
+                        <div class="slider_numder"></div>
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider9.webp" alt="slider9">
+                        <div class="slider_textbox">
+                            <div class="minibox"></div>
+                            <h1 class="slider_title"></h1>
+                            <p class="slider_desc"></p>
+                        </div>
+                        <div class="slider_numder"></div>
+                    </li>
+                    <li class="slide">
+                        <img src="img/slider10.webp" alt="slider10">
+                        <div class="slider_textbox">
+                            <div class="minibox"></div>
+                            <h1 class="slider_title"></h1>
+                            <p class="slider_desc"></p>
+                        </div>
+                        <div class="slider_numder"></div>
+                    </li>
                 </ul>
-                <button class="prev">Prev</button>
-                <button class="next">next</button>
-            </div>
-        </div>
-
-        <!----MDPICK---->
-        <div class="mdpick">
-            <div class="wonderaum_title">
-                <h2>WONDERAUM MD'S PICK</h2>
-                <p>원더라움이 제안하는 큐레이션된 상품</p>
-            </div>
-            <div class="wonderaum_container">
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/m1.png" alt="img_1">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">FREE CUSHION
-                                <br>
-                                2 COLORS
-                                <br>
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩98,100</span>
-                        </div>
-                    </div>
+                <div class="prev_btn_slider">
+                    <img src="./img/arrow-left-s.png" alt="left">
                 </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/m2.jpg" alt="img_2">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">[바로배송]
-                                <br>
-                                PEDRERA COFFEE TABLE
-                                <br>
-                                BRASS LEG
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩1,270,000</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/m3.jpg" alt="img_3">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">[바로배송]
-                                <br>
-                                EDGE V.1 SOFA MOD.25
-                                <br>
-                                PATROL COGNAC
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩6,432,000</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/m4.jpg" alt="img_4">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">[FERM LIVING]
-                                <br>
-                                MIRAGE BLANKET
-                                <br>
-                                OFFWHITE
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩240,300</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/m5.png" alt="img_5">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">RICO LOUNGE CHAIR
-                                <br>
-                                LOUISIANA
-                                <br>
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩4,912,000</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/m6.png" alt="img_6">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">[바로배송]
-                                <br>
-                                PLANT BOX
-                                <br>
-                                BIRGHTBLUE
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩295,000</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/m7.png" alt="img_7">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">[프리오더]
-                                <br>
-                                ARNO CHAIR
-                                <br>
-                                NATURAL /CHROME
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩310,000</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/m8.jpg" alt="img_8">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">STRING POCKET
-                                <br>
-                                WHITE/WHITE
-                                <br>
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩243,000</span>
-                        </div>
-                    </div>
+                <div class="next_btn_slider">
+                    <img src="./img/arrow-right-s.png" alt="right">
                 </div>
             </div>
-        </div>
 
-        <!----CHOLCE---->
-        <div class="cholce">
-            <div class="wonderaum_title">
-                <h2>CURATOR'S CHOICE</h2>
-                <p>더 다양한 원더라움을 만나보세요</p>
-            </div>
-            <div class="cholce_box">
-                <div class="cholce_img_box">
-                    <img src="./img/ch1.png" alt="cholce1">
-                </div>
-                <div class="cholce_text">
-                    <span class="text_b">바로 배송</span>
-                    <br>
-                    <span class="text_s">빠르게 만날 수 있는 제품</span>
-                </div>
-
-                <div class="cholce_img_box">
-                    <img src="./img/ch2.png" alt="cholce2">
-                </div>
-                <div class="cholce_text_1">
-                    <span class="text_b">DE SEDE</span>
-                    <br>
-                    <span class="text_s">스위스 메이드의 장인정신</span>
-                </div>
-
-                <div class="cholce_img_box">
-                    <img src="./img/ch3.png" alt="cholce3">
-                </div>
-            </div>
-        </div>
-
-        <!----LUCKY---->
-        <div class="lucky">
-            <div class="wonderaum_title">
-                <h2>LUCKY CHANCE</h2>
-                <p>득템기회, 할인은 못참지!</p>
-            </div>
-            <div class="wonderaum_container">
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/l1.png" alt="lucky_1">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">[바로배송]
-                                <br>
-                                RIPPLE CHAMPAGNE CLEAR
-                                <br>
-                                정가 77,000원
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩69,300</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/l2.jpg" alt="lucky_2">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">[DP 상품]
-                                <br>
-                                HALVES SIDE TABLE
-                                <br>
-                                정가 607,000원
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩485,600</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/l3.jpg" alt="lucky_3">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">[바로배송]
-                                <br>
-                                SOLAR SYSTEM 태양계 행성모빌
-                                <br>
-                                정가 149,000원
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩127,000</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/l4.jpg" alt="lucky_4">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">SAFARI TUFTED RUG
-                                <br>
-                                LEOPARD
-                                <br>
-                                정가 394,000원
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩295,000</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!----BEST---->
-        <div class="best">
-            <div class="wonderaum_title">
-                <h2>BEST PRODUCTS</h2>
-                <p>가장 많은 고객들의 사랑을 받은 제품들을 만나보세요</p>
-            </div>
-            <div class="wonderaum_container">
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/b1.png" alt="best_1">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">[DESEDE]
-                                <br>
-                                DS-707/01
-                                <br>
-                                학동 본점 문의
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩0</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/b2.jpg" alt="best_2">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">BEETLE CHAIR BRASS LEGS
-                                <br>
-                                6 COLORS
-                                <br>
-                                <br>
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩509,000</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/b3.jpg" alt="best_3">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">LUCE PLAN
-                                <br>
-                                HOPE PENDANT
-                                <br>
-                                3 SIZES
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩2,200,000</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/b4.png" alt="best_4">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">FLUTE TABLE
-                                <br>
-                                160 SIZE
-                                <br>
-                                WHITE
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩4,360,000</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!----CHAIR---->
-        <div class="chair">
-            <div class="wonderaum_title">
-                <h2>LOYNGE CHAIR</h2>
-                <p>포근하게 앉을 수 있는</p>
-            </div>
-            <div class="wonderaum_container">
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/air1.png" alt="chair_1">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">[리퍼] DOZE LOUNGE CHAIR,OTTOMAN
-                                <br>
-                                REFINE COGNAC/BLACK
-                                <br>
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩4,126,800</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/air2.jpg" alt="chair_2">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">DESERT LOUNGE CHAIR
-                                <br>
-                                CASHMERE BASE
-                                <br>
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩480,000</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/air3.jpg" alt="chair_3">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">FK6720 EASY CHAIR
-                                <br>
-                                BLACK
-                                <br>
-                                전화문의
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩0</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wonderaum_box">
-                    <div class="wonderaum_img_box">
-                        <img src="./img/air4.jpg" alt="chair_4">
-                    </div>
-                    <div class="wonderaum_text_box">
-                        <div class="product_name">
-                            <span class="product_name_sp">[DP 상품] PACHA LOUNGE CHAIR
-                                <br>
-                                HARP
-                                <br>
-                                정가 ₩4,990,000원
-                            </span>
-                        </div>
-                        <div class="amount">
-                            <span class="amount_sp">₩3,493,000</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!----PARTNER---->
-        <div class="partner">
-            <div class="wonderaum_title">
-                <h2>OFFICIAL PARTNER BRANDS</h2>
-            </div>
-            <div class="partner_box">
+            <!------------ ICON COLLECTION ------------>
+            <div class="icon_collection">
                 <ul>
                     <li>
-                        <img src="./img/p1.jpg" ait="partner1">
+                        <div class="imgbox"><img src="img/N1.png" alt=""></div>
+                        <h6 class="icon_title">신간</h6>
                     </li>
                     <li>
-                        <img src="./img/p2.jpg" ait="partner2">
+                        <div class="imgbox"><img src="img/V2.png" alt=""></div>
+                        <h6 class="icon_title">이벤트 모음</h6>
                     </li>
                     <li>
-                        <img src="./img/p3.jpg" ait="partner3">
+                        <div class="imgbox"><img src="img/B3.png" alt=""></div>
+                        <h6 class="icon_title">베스트셀러</h6>
                     </li>
                     <li>
-                        <img src="./img/p4.jpg" ait="partner4">
+                        <div class="imgbox"><img src="img/Y6.png" alt=""></div>
+                        <h6 class="icon_title">신간 캘린더</h6>
                     </li>
                     <li>
-                        <img src="./img/p5.jpg" ait="partner5">
+                        <div class="imgbox"><img src="img/C7.png" alt=""></div>
+                        <h6 class="icon_title">위클리 쿠폰</h6>
                     </li>
                     <li>
-                        <img src="./img/p5.jpg" ait="partner6">
+                        <div class="imgbox"><img src="img/P8.png" alt=""></div>
+                        <h6 class="icon_title">리디페이퍼</h6>
+                    </li>
+                    <li>
+                        <div class="imgbox"><img src="img/h7.webp" alt=""></div>
+                        <h6 class="icon_title">혜택지도</h6>
                     </li>
                 </ul>
             </div>
-        </div>
 
-        <!----INFO---->
-        <div class="info">
-            <div class="wonderaum_title">
-                <h2>WONDERAUM SHOP INFO</h2>
+            <!------------ DISCOVERY ------------>
+            <div class="discovery">
+                <h2 class="section_title">오늘, 리디의 발견</h2>
+                <div class="discovery_slider">
+                    <ul>
+                        <li>
+                            <div class="discovery_imgbox">
+                                <div class="discovery_colorbox"><img src="" alt=""></div>
+                            </div>
+                            <div class="discovery_textbox">
+                                <p class="discovery_desc">"우리는 유령인가요?"<br>쇳밥 먹는 청년들의 출사표</p>
+                                <h4 class="discovery_title"></h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="discovery_imgbox">
+                                <div class="discovery_colorbox"><img src="" alt=""></div>
+                            </div>
+                            <div class="discovery_textbox">
+                                <p class="discovery_desc"><미드나잇 라이브러리>저자의<br>삶의 평온을 위한 에세이</p>
+                                <h4 class="discovery_title"></h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="discovery_imgbox">
+                                <div class="discovery_colorbox"><img src="" alt=""></div>
+                            </div>
+                            <div class="discovery_textbox">
+                                <p class="discovery_desc">고금리인 지금!<br>가장 효율적인 대출 방법은?</p>
+                                <h4 class="discovery_title"></h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="discovery_imgbox">
+                                <div class="discovery_colorbox"><img src="" alt=""></div>
+                            </div>
+                            <div class="discovery_textbox">
+                                <p class="discovery_desc">원작으로 먼저 보는<br>드라마<조선 정신과 의사 유세풍></p>
+                                <h4 class="discovery_title"></h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="discovery_imgbox">
+                                <div class="discovery_colorbox"><img src="" alt=""></div>
+                            </div>
+                            <div class="discovery_textbox">
+                                <p class="discovery_desc">모든 것이 무너져도<br>그 시간 역시 '끝'은 있다.</p>
+                                <h4 class="discovery_title"></h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="discovery_imgbox">
+                                <div class="discovery_colorbox"><img src="" alt=""></div>
+                            </div>
+                            <div class="discovery_textbox">
+                                <p class="discovery_desc"><보건교사 안은영>정세랑 작가의<br>가장 과감한 미니픽션</p>
+                                <h4 class="discovery_title"></h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="prev_btn_discovery">
+                        <img src="./img/arrow-left-s.png" alt="left">
+                    </div>
+                    <div class="next_btn_discovery">
+                        <img src="./img/arrow-right-s.png" alt="right">
+                    </div>
+                </div>
             </div>
-            <div class="info_box">
-                <ul>
-                    <li>
-                        <img src="./img/w1.jpg" alt="info1">
-                    </li>
-                    <li>
-                        <img src="./img/w2.jpg" alt="info2">
-                    </li>
-                    <li>
-                        <img src="./img/w3.jpg" alt="info3">
-                    </li>
-                    <li>
-                        <img src="./img/w4.jpg" alt="info4">
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-        <!----FOOTER---->
+            <!------------ POPULAR ------------>
+            <div class="popular">
+                <h2 class="section_title">지금 많이 읽고 있는 책</h2>
+                <div class="popular_slider">
+                    <ul>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">1</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(628)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">2</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">3</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.9</span><span class="scope2">(136)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">4</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(1,022)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">5</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(3,716)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">6</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(2,648)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">7</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.8</span><span class="scope2">(1,275)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">8</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(29)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">9</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(1,032)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">10</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(230)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">11</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.5</span><span class="scope2">(451)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">12</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.8</span><span class="scope2">(484)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">13</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(452)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">14</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(442)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">15</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(314)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">16</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.8</span><span class="scope2">(25)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">17</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.3</span><span class="scope2">(6,117)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">18</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(19)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <div class="prev_btn_pobe">
+                        <img src="./img/arrow-left-s.png" alt="left">
+                    </div>
+                    <div class="next_btn_pobe">
+                        <img src="./img/arrow-right-s.png" alt="right">
+                    </div>
+                </div>
+            </div>
+
+            <!------------ LATEST ------------>
+            <div class="latest">
+                <h2 class="section_title">새로 나온 책</h2>
+                <div class="latest_slider">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="prev_btn_latest">
+                        <img src="./img/arrow-left-s.png" alt="left">
+                    </div>
+                    <div class="next_btn_latest">
+                        <img src="./img/arrow-right-s.png" alt="right">
+                    </div>
+                </div>
+            </div>
+
+            <!------------ BESTSELLER ------------>
+            <div class="bestseller">
+                <h2 class="section_title">베스트셀러</h2>
+                <div class="bestseller_slider">
+                    <ul>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">1</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.9</span><span class="scope2">(136)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">2</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.4</span><span class="scope2">(17)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">3</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.9</span><span class="scope2">(15)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">4</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.8</span><span class="scope2">(28)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">5</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(2,648)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">6</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.1</span><span class="scope2">(508)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">7</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(623)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">8</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(3)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">9</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(230)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">10</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.1</span><span class="scope2">(44)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">11</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.5</span><span class="scope2">(85)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">12</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.3</span><span class="scope2">(12)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">13</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.4</span><span class="scope2">(1,438)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">14</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">5.0</span><span class="scope2">(2)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">15</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.0</span><span class="scope2">(8)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">16</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.0</span><span class="scope2">(4)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">17</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(2,115)</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_thumbnail_small"></div>
+                                    <div class="content_orber">18</div>
+                                    <div class="content_text">
+                                        <h5 class="h_text"></h5>
+                                        <p></p>
+                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">5.0</span><span class="scope2">(3)</span></div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <div class="prev_btn_pobe">
+                        <img src="./img/arrow-left-s.png" alt="left">
+                    </div>
+                    <div class="next_btn_pobe">
+                        <img src="./img/arrow-right-s.png" alt="right">
+                    </div>
+                </div>
+            </div>
+
+            <!------------ MDSPICK ------------>
+            <div class="mdspick">
+                <h2 class="section_title">MD's PICK</h2>
+                <div class="mdspick_slider">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.0</span><span class="scope2">(1)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">5.0</span><span class="scope2">(3)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(111)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(28)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(51)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">5.0</span><span class="scope2">(2)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.5</span><span class="scope2">(41)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">3.9</span><span class="scope2">(20)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(19)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">3.3</span><span class="scope2">(25)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="prev_btn_ridi">
+                        <img src="./img/arrow-left-s.png" alt="left">
+                    </div>
+                    <div class="next_btn_ridi">
+                        <img src="./img/arrow-right-s.png" alt="right">
+                    </div>
+                </div>
+            </div>
+
+            <!------------ RECOMMEND ------------>
+            <div class="recommend">
+                <h2 class="section_title">리디북스토어 추천도서</h2>
+                <div class="recommend_slider">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">5.0</span><span class="scope2">(1)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.5</span><span class="scope2">(33)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.4</span><span class="scope2">(17)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(71)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.0</span><span class="scope2">(1)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.3</span><span class="scope2">(144)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(12)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">3.5</span><span class="scope2">(12)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.5</span><span class="scope2">(40)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">3.9</span><span class="scope2">(124)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="content_thumbnail_large"></div>
+                                <div class="content_text">
+                                    <h5></h5>
+                                    <p></p>
+                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.2</span><span class="scope2">(54)</span></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="prev_btn_ridi">
+                        <img src="./img/arrow-left-s.png" alt="left">
+                    </div>
+                    <div class="next_btn_ridi">
+                        <img src="./img/arrow-right-s.png" alt="right">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer>
-            <div class="notice">
-                <div class="review">
-                    <h5>NOTICE</h5>
-                    <a href="#">RE-VIEWING WONDERAUM</a>
-                    <br>
-                    <a href="#">WELCOME TO WONDERAUM</a>
-                </div>
-                <div class="custtomer">
-                    <h5>CUSTOMER CENTER</h5>
-                    <h6>02-546-3307</h6>
-                    <div class="custtomer_text">
-                        TUE-SAT
-                        <br>
-                        AM 10:00-PM 19:00
-                        <br>
-                        SUNDAY,MONDAY OFF
-                        <br>
-                        OFFICIAL HOLIDAY
+            <div class="footer_upper">
+                <div class="footer_upper_cs">
+                    <div class="cs_content">
+                        <img src="img/h1.jpg" alt="">
+                        <span>고객센터</span>
+                    </div>
+                    <div class="cs_content">
+                        <img src="img/h2.jpg" alt="">
+                        <span>공지사항</span>
                     </div>
                 </div>
-                <div class="bank">
-                    <h5>BANK INFO</h5>
-                    <h6>기업은행</h6>
-                    <h6>02455135801012</h6>
-                    <h6>원더그린(주)</h6>
-                </div>
-            </div>
 
-            <div class="about">
-                <ul>
-                    <li>ABOUT WONDERAUM</li>
-                    <li>/ SHOP GUIDE</li>
-                    <li>/ AGREEMENT</li>
-                    <li>/ PRIVACY POLICY</li>
-                    <li>/ CONTACT</li>
-                </ul>
+                <div class="footer_upper_about">
+                    <ul>
+                        <li>
+                            <h3>서비스</h3>
+                            <ul>
+                                <li><a href="">리디페이퍼</a></li>
+                                <li><a href="">제휴카드</a></li>
+                                <li><a href="">뷰어 다운로드</a></li>
+                                <li><a href="">CP사이트</a></li>
+                                <li><a href="">리디셀렉트 B2B</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>기타 문의</h3>
+                            <ul>
+                                <li><a href="">콘텐츠 제공 문의</a></li>
+                                <li><a href="">사업 제휴 문의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>회사</h3>
+                            <ul>
+                                <li><a href="">회사소개</a></li>
+                                <li><a href="">인재채용</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_upper_sns">
+                    <ul>
+                        <li><a href=""><img src="img/f.jpg" alt=""></a></li>
+                        <li><a href=""><img src="img/in.jpg" alt=""></a></li>
+                        <li><a href=""><img src="img/y.jpg" alt=""></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="address">
-                <div class="address_text">
-                    상호명 : 원더그린(주)
-                    <span>|</span>
-                    주소 : 부산광역시 강서구 정주산단로 49 원더그린(주)
+            <div class="footer_lower">
+                <div class="footer_lower_about">
+                    <h5>리디(주) 사업자 정보</h5>
+                    <img src="./img/downarrow.png" alt="아래 화살표">
+                    <div class="about_content">
+                        <div class="about_box">
+                            <dt>대표자</dt>
+                            <dd>배기식</dd>
+                        </div>
+                        <div class="about_box">
+                            <dt>사업자 등록번호</dt>
+                            <dd>120-87-27435</dd>
+                        </div>
+                        <div class="about_box">
+                            <dt>통신판매업 신고번호</dt>
+                            <dd>제 2009-서울강남 35-02139호</dd>
+                        </div>
+                        <div class="about_box">
+                            <dt>이메일</dt>
+                            <dd>help@ridi.com</dd>
+                        </div>
+                        <div class="about_box">
+                            <dt>대표전화</dt>
+                            <dd>1644-0331</dd>
+                        </div>
+                        <div class="about_box">
+                            <dt>주소</dt>
+                            <dd>서울시 강남구 역삼동 702-28 어반벤치빌딩 10층(테헤란로 325)</dd>
+                        </div>
+                    </div>
                 </div>
-                <div class="address_text">
-                    대표 : 최가도
-                    <span>|</span>
-                    사업자등록번호 : 304-87-00238
-                    <span>|</span>
-                    통신판매업신고번호 : 제2018부산강서00457
-                    <span>|</span>
-                    개인정보관리자 : 최유리
-                </div>
-                <div class="address_text">
-                    대표번호 : 02-546-3307
-                    <span>|</span>
-                    팩스번호 : 02-546-3308
-                    <span>|</span>
-                    메일 : cyr@wondergr.com
-                    <span>|</span>
-                    호스팅제공 : 엔에이치엔고도(주)
-                </div>
-                <div class="address_text" style="padding-bottom: 3%;">
-                    copyright (c) www.wonderaum.com all rights reserved.
+
+                <div class="footer_lower_info">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li>|</li>
+                        <li><a href="#">개인정보 처리방침</a></li>
+                        <li>|</li>
+                        <li><a href="#">청소년보호정책</a></li>
+                        <li>|</li>
+                        <li><a href="#">사업자정보확인</a></li>
+                    </ul>
+                    <p>©RIDI Corp.</p>
                 </div>
             </div>
         </footer>
     </div>
-<!---https://www.wonderaum.com/--->
+    <script>
+        let color=["rgb(67, 39, 27)","rgb(4, 52, 148)","rgb(142, 16, 21)","rgb(14, 68, 117)","rgb(10, 88, 61)","rgb(6, 123, 126)"]
+        
+        for(let i = 0; i <color.length; i++)
+        document.getElementsByClassName("discovery_colorbox")[i].style.backgroundImage="linear-gradient(transparent 30%,"+ color[i]+ "0px)";
+    </script>
+
+    <script src="./js/discovery.js"></script>
+    <script src="./js/popular.js"></script>
+    <script src="./js/latest.js"></script>
+    <script src="./js/bestseller.js"></script>
+    <script src="./js/mdspick.js"></script>
+    <script src="./js/recommend.js"></script>
 </body>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-<script src="./js/shrink_header.js"></script> 
-<script src="./js/slider.js"></script>
+
 </html>
