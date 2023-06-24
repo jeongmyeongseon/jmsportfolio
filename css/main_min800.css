@@ -108,6 +108,11 @@
         margin: 0 auto;
     }
 
+    #fullpage .section-07 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     #menu {
         position: fixed;
         z-index: 2;
@@ -215,54 +220,65 @@
 
     /*point color*/
     .first>li:first-child {
-        background-color: #f2ece0;
+        background-color: #fff;
     }
 
     .first>li:nth-child(2) {
-        background-color: #a1785c;
+        background-color: rgb(60, 105, 194);
     }
 
     .first>li:last-child {
-        background-color: #c1e9e9;
-    }
-
-    .second>li:first-child {
-        background-color: #fd226a;
-    }
-
-    .second>li:nth-child(2) {
-        background-color: #7c529c;
-    }
-
-    .second>li:last-child {
-        background-color: #13111f;
-    }
-
-    .third>li:first-child {
-        background-color: #0064ff;
-    }
-
-    .third>li:nth-child(2) {
         background-color: #000;
     }
 
+    .second>li:first-child {
+        background-color: #f2ece0;
+    }
+
+    .second>li:nth-child(2) {
+        background-color: #a1785c;
+    }
+
+    .second>li:last-child {
+        background-color: #c1e9e9;
+    }
+
+    .third>li:first-child {
+        background-color: #fd226a;
+    }
+
+    .third>li:nth-child(2) {
+        background-color: #7c529c;
+    }
+
     .third>li:last-child {
+        background-color: #13111f;
+    }
+
+    .fourth>li:first-child {
+        background-color: #0064ff;
+    }
+
+    .fourth>li:nth-child(2) {
+        background-color: #000;
+    }
+
+    .fourth>li:last-child {
         background-color: #fff;
         border: 1px solid #ccc;
     }
 
-    .fourth>li:first-child {
+    .five>li:first-child {
         background-color: #dacec2;
     }
 
-    .fourth>li:nth-child(2) {
+    .five>li:nth-child(2) {
         background-color: #fe8340;
     }
 
-    .fourth>li:last-child {
+    .five>li:last-child {
         background-color: #293d31;
     }
-
 
     /*button*/
     .pro_text>button {
@@ -276,45 +292,56 @@
     }
 
     .pro_text>.btn1 {
-        background-color: #a1785c;
+        background-color: rgb(60, 105, 194);
         color: #fff;
     }
 
     .pro_text>.btn1:hover {
-        background-color: #c1e9e9;
-        color: #000;
+        background-color: #fff;
+        color: rgb(60, 105, 194);
+        border: 1px solid rgb(60, 105, 194);
     }
 
     .pro_text>.btn2 {
-        background-color: #7c529c;
+        background-color: #a1785c;
         color: #fff;
     }
 
     .pro_text>.btn2:hover {
-        background-color: #fd226a;
+        background-color: #c1e9e9;
         color: #000;
+        border: none;
     }
 
     .pro_text>.btn3 {
-        background-color: #0064ff;
+        background-color: #7c529c;
         color: #fff;
     }
 
     .pro_text>.btn3:hover {
-        background-color: #ddd;
+        background-color: #fd226a;
         color: #000;
     }
 
     .pro_text>.btn4 {
-        background-color: #293d31;
+        background-color: #0064ff;
         color: #fff;
     }
 
     .pro_text>.btn4:hover {
-        background-color: #fe8340;
+        background-color: #ddd;
         color: #000;
     }
 
+    .pro_text>.btn5 {
+        background-color: #293d31;
+        color: #fff;
+    }
+
+    .pro_text>.btn5:hover {
+        background-color: #fe8340;
+        color: #000;
+    }
 
     .phonebox {
         width: 230px;
@@ -352,8 +379,8 @@
     }
 
 
-    /*section-06*/
-    #fullpage>.section-06 {
+    /*section-07*/
+    #fullpage>.section-07 {
         width: 100%;
         margin: 0 auto;
         position: relative;
@@ -425,7 +452,7 @@
         text-align: left;
     }
 
-    .section-06 .profile_wrap {
+    .section-07 .profile_wrap {
         width: 1340px;
         height: 100%;
         margin: 0 auto;
@@ -435,7 +462,7 @@
     }
 
     /*이력서*/
-    .section-06 .resume {
+    .section-07 .resume {
         width: 920px;
         height: 700PX;
         display: flex;
@@ -444,7 +471,7 @@
         margin-top: 7%;
     }
 
-    .section-06 .resume h1 {
+    .section-07 .resume h1 {
         width: 100%;
         font-size: 44px;
         font-weight: 400;
@@ -452,12 +479,12 @@
         letter-spacing: -0.5px;
     }
 
-    .section-06 .resume h1 em {
+    .section-07 .resume h1 em {
         font-style: normal;
         font-weight: 900;
     }
 
-    .section-06 .graph {
+    .section-07 .graph {
         width: 100%;
         height: 320px;
         display: flex;
@@ -466,22 +493,22 @@
         align-items: center;
     }
 
-    .section-06 .graph p {
+    .section-07 .graph p {
         color: #fff;
         font-size: 16px;
         font-weight: 300;
         letter-spacing: 6px;
     }
 
-    .section-06 .graph_line {
+    .section-07 .graph_line {
         width: 80%;
     }
 
-    .section-06 .graph_line img {
+    .section-07 .graph_line img {
         width: 100%;
     }
 
-    .section-06 .career {
+    .section-07 .career {
         height: 200px;
         display: flex;
         flex-direction: column;
@@ -490,7 +517,7 @@
         padding: 0% 10% 5% 0%;
     }
 
-    .section-06 .career h3 {
+    .section-07 .career h3 {
         width: 100%;
         color: #fff;
         font-size: 16px;
@@ -498,13 +525,13 @@
         margin-bottom: 6px;
     }
 
-    .section-06 .career p {
+    .section-07 .career p {
         color: #fff;
         font-size: 14px;
         font-weight: 200;
     }
 
-    .section-06 .career p span {
+    .section-07 .career p span {
         color: #fff;
         font-size: 12px;
         font-weight: 200;
@@ -513,7 +540,7 @@
 
 
     /*프로필*/
-    .section-06 .profile {
+    .section-07 .profile {
         width: 360px;
         height: 100%;
         display: flex;
@@ -522,7 +549,7 @@
         margin-top: 6%;
     }
 
-    .section-06 .myphoto {
+    .section-07 .myphoto {
         width: 280px;
         height: 700PX;
         display: flex;
@@ -531,29 +558,29 @@
         align-items: center;
     }
 
-    .section-06 .profileimg {
+    .section-07 .profileimg {
         width: 220px;
         margin-top: 27px;
     }
 
-    .section-06 .profileimg img {
+    .section-07 .profileimg img {
         width: 100%;
     }
 
-    .section-06 .profiletxt h3 {
+    .section-07 .profiletxt h3 {
         font-size: 22px;
         font-weight: 400;
         line-height: 120%;
         color: #fff;
     }
 
-    .section-06 .profiletxt h3 em {
+    .section-07 .profiletxt h3 em {
         font-size: 15px;
         font-weight: 300;
         font-style: normal;
     }
 
-    .section-06 .profiletxt table {
+    .section-07 .profiletxt table {
         font-size: 13px;
         text-align: left;
         letter-spacing: 0.5px;
@@ -562,28 +589,28 @@
         color: #fff;
     }
 
-    .section-06 .profiletxt table th {
+    .section-07 .profiletxt table th {
         width: 92px;
         vertical-align: top;
         font-weight: 400;
     }
 
-    .section-06 .profiletxt table td {
+    .section-07 .profiletxt table td {
         font-weight: 200;
     }
 
-    .section-06 .profiletxt h5 {
+    .section-07 .profiletxt h5 {
         font-size: 13px;
         font-weight: 300;
         color: #fbb03b;
     }
 
-    .section-06 .profiletxt h5 em {
+    .section-07 .profiletxt h5 em {
         font-weight: 600;
         font-style: normal;
     }
 
-    .section-06 .profiletxt p {
+    .section-07 .profiletxt p {
         font-size: 12px;
         font-weight: 200;
         color: #999;
