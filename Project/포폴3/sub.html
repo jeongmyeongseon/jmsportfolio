@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub_common_max799.css">
+    <link rel="stylesheet" href="css/sub_common_min800.css">
+    <link rel="stylesheet" href="css/sub_common_min1170.css">
+    <link rel="stylesheet" href="css/sub_main_max799.css">
+    <link rel="stylesheet" href="css/sub_main_min800.css">
+    <link rel="stylesheet" href="css/sub_main_min1170.css">
+    <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$(".a").click(function(){
+				$(".b").slideToggle();
+			});
+
+			$(window).resize(function(){
+				if(window.innerWidth>=800){
+					$(".b").show();
+				}
+
+				if(window.innerWidth<=799){
+					$(".b").hide();
+				}
+			});
+
+		});
+	</script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!----HEADER---->
+        <header>
+            <div class="logobox">
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo" class="logo-a">
+                </div>
+                <img src="img/3.png" alt="아이콘" class="a">
+            </div>
+            <nav class="b">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">UMF</a></li>
+                    <li><a href="#">LINEUPS</a></li>
+                    <li><a href="#">TICKETS</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <div class="btnbox">
+                <img src="img/search.png" alt="search" class="btn">
+                <button class="btn_1">GET TICKET</button>
+            </div>
+        </header>
+
+        <!----SLIDER---->
+        <div class="slider"></div>
+
+        <!----SECTION---->
+        <section>
+            <!----ART---->
+            <div class="art">
+                <div class="art_box">
+                    <div class="art_title">
+                        <h1>ARTIST BIO</h1>
+                        <h4>Sed porta cursus enim, vitae maximus felis luctus iaculis.</h4>
+                    </div>
+                    <div class="art_photo_box">
+                        <div class="art_img">
+                            <img src="./img/art1.jpg" alt="art_img1">
+                        </div>
+                        <div class="art_text">
+                            <h3>The Weeknd</h3>
+                            <p>The Weeknd has won three Grammy Awards, five American Music Awards, nine Billboard Music Awards, two MTV Video Music Awards, nine Juno Awards, and has been nominated for an Academy Award. 
+                            <br>
+                            He holds several chart records, being the first artist to simultaneously hold the top three positions on the Billboard Hot R&B Songs chart with "Can't Feel My Face", "Earned It", and "The Hills".
+                            <br>
+                            The Weeknd was awarded the Allan Slaight Award by Canada's Walk of Fame.
+                            </p>
+                            <img src="./img/sign.png" alt="sign">
+                        </div>
+                    </div>
+
+                    <div class="art_photo_box2">
+                        <div class="art_text">
+                            <h3>Hello, It's Michael Smithson</h3>
+                            <p>Nulla pretium tincidunt felis, nec sollicitudin mauris lobortis in.
+                            <br>
+                            Aliquam eu feugiat ligula, laoreet efficitur nulla. 
+                            <br>
+                            Morbi nec neque porta, elementum massa at, vehicula nunc. Nulla facilisi.
+                            <br>
+                            Donec id purus eu lectus imperdiet varius.
+                            <br>
+                            Curabitur consectetur nunc sem, vitae cursus enim tempor eget.
+                            </p>
+                            <img src="./img/sign.png" alt="sign">
+                        </div>
+                        <div class="art_img">
+                            <img src="./img/art2.jpg" alt="art_img2">
+                        </div>
+                    </div>
+
+                    <div class="art_photo_box">
+                        <div class="art_img">
+                            <img src="./img/art3.jpg" alt="art_img3">
+                        </div>
+                        <div class="art_text">
+                            <h3>Seoul, South Korea and DJ Aster</h3>
+                            <p>In the Seoul where the world is paying attention to, DJ ASTER plays music in the famous clubs at Gangnam, Spectrum Dance Music Festival, and World DJ Festival.
+                            <br>
+                            DJ ASTER who has become the most popular DJ in EDM area of Korea presents a sensational and unique mash-up sound based on Electro House.
+                            <br>
+                            He is a DJ who can satisfy audiences not only hearing but also visual aspect while breathing with the audience with powerful performance.
+                            <br>
+                            As the trend is changing rapidly, listeners are more likely to listen music instantly.
+                            </p>
+                            <img src="./img/sign.png" alt="sign">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----SHOW---->
+            <div class="show">
+                <div class="show_box">
+                    <h1>UPCOMING SHOWS</h1>
+                    <h4>Sed porta cursus enim, vitae maximus felis luctus iaculis.</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>17
+                                    <br>
+                                    July
+                                </th>
+                                <td>
+                                    <img src="./img/show1.jpg" alt="table1">
+                                </td>
+                                <td>
+                                    ELECTRIC FESTIVAL
+                                    <br>
+                                    Manhathan, NY, USA
+                                </td>
+                                <td>
+                                    Main
+                                    <br>
+                                    Stadium
+                                </td>
+                                <td>
+                                    21:30
+                                </td>
+                                <td>
+                                    <button>BUY TIKETS</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>23
+                                    <br>
+                                    July
+                                </th>
+                                <td>
+                                    <img src="./img/show2.jpg" alt="table2">
+                                </td>
+                                <td>
+                                    ELECTRIC CASTLE FESTIVAL
+                                    <br>
+                                    Cluj, Romania
+                                </td>
+                                <td>
+                                    Main
+                                    <br>
+                                    Stadium
+                                </td>
+                                <td>
+                                    21:30
+                                </td>
+                                <td>
+                                    <button>BUY TIKETS</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>25
+                                    <br>
+                                    July
+                                </th>
+                                <td>
+                                    <img src="./img/show3.jpg" alt="table3">
+                                </td>
+                                <td>
+                                    SUNFLOWER FESTIVAL
+                                    <br>
+                                    Paris, France
+                                </td>
+                                <td>
+                                    Main
+                                    <br>
+                                    Stadium
+                                </td>
+                                <td>
+                                    21:30
+                                </td>
+                                <td>
+                                    <button>BUY TIKETS</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>30
+                                    <br>
+                                    July
+                                </th>
+                                <td>
+                                    <img src="./img/show4.jpg" alt="table4">
+                                </td>
+                                <td>
+                                    ELECTRIC MUSIC FESTIVAL
+                                    <br>
+                                    Seoul, Republic of Korea
+                                </td>
+                                <td>
+                                    Main
+                                    <br>
+                                    Stadium
+                                </td>
+                                <td>
+                                    21:30
+                                </td>
+                                <td>
+                                    <button>BUY TIKETS</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
+            </div>
+
+            <!----BAND---->
+            <div class="band">
+                <div class="band_box">
+                    <div class="band_text">
+                        <h4>Artist's/band name</h4>
+                        <p>love is all around</p>
+                        <i class="fas fa-play-circle">
+                        </i>
+                    </div>
+                </div>
+                <div class="band_box">
+                    <div class="band_text">
+                        <h4>Artist's/band name</h4>
+                        <p>love is all around</p>
+                        <i class="fas fa-play-circle">
+                        </i>
+                    </div>
+                </div>
+                <div class="band_box">
+                    <div class="band_text">
+                        <h4>Artist's/band name</h4>
+                        <p>love is all around</p>
+                        <i class="fas fa-play-circle">
+                        </i>
+                    </div>
+                </div>
+            </div>
+
+            <!----PLAY---->
+            <div class="play">
+                <div class="playing">
+                    <div class="playing_box">
+                        <div class="play_img_box">
+                            <img src="./img/play.jpg" alt="playing_img">
+                        </div>
+                        <div class="playing_table_box">
+                            <p>FEATURED ALBUM</p>
+                            <h5>Love is all Around</h5>
+                            <button>BUY IT ON ITUNES</button>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-play"></i>
+                                        </td>
+                                        <td>Hey, Mister Dj</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-play"></i>
+                                        </td>
+                                        <td>Message to my future self</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-play"></i>
+                                        </td>
+                                        <td>Bring back the love</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-play"></i>
+                                        </td>
+                                        <td>Hey, Mister Dj - Remix</td>
+                                        <td>...</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fas fa-play"></i>
+                                        </td>
+                                        <td>Message to my future self</td>
+                                        <td>...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="drop">
+                                <p>PLAYING</p>
+                                <h5>Drop that best</h5>
+                                <i class="fas fa-play-circle"></i>
+                                <span>00:00/...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="search_box">
+                        <h1>Music</h1>
+                        <p>Search for the best music</p>
+                    </div>
+                    <div class="search_box">
+                        <h1>Artists</h1>
+                        <p>Search for the best artists</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----FOOTER---->
+        <footer>
+            <div class="foobox1">
+                <div class="ftbox1">
+                    <div class="logoobox">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="lotxbox">
+                        <span class="sptx">March 26, 27, 28 — 2021<br>B.F Park, Downtown Miami, FL</span>
+                        <p>Ultra Music Festival is a three-day electronic music festival in Down-town Miami, Florida.
+                            For more info, visit the official website.</p>
+                    </div>
+                </div>
+                <div class="ftbox2">
+                    <h5>WORLDWIDE</h5>
+                    <ul>
+                        <li><a href="#">Ultra Worldwide</a></li>
+                        <li><a href="#">Merch By UMF</a></li>
+                        <li><a href="#">Road to Worldwide</a></li>
+                        <li><a href="#">UMF Films & Gallery View</a></li>
+                        <li><a href="#">UMF TV & Radio View</a></li>
+                        <li><a href="#">Previous & Resistance Lineup</a></li>
+                    </ul>
+                </div>
+                <div class="ftbox2">
+                    <h5>INFORMATION</h5>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                        <li><a href="#">301 BB. Miami FL, 33132</a></li>
+                        <li><a href="#">Tell: +1 305-250-2943</a></li>
+                        <li><a href="#">Fax: +1 305-854-2943</a></li>
+                        <li><a href="#">Email: umfinfo@ci.miami.fl.us</a></li>
+                    </ul>
+                </div>
+                <div class="ftbox3">
+                    <h5>NEWSLETTER</h5>
+                    <div class="snbox">
+                        <a class="snimg" href="#"><img src="img/icon1.png" alt=""></a>
+                        <a class="snimg" href="#"><img src="img/icon2.png" alt=""></a>
+                        <a class="snimg" href="#"><img src="img/icon3.png" alt=""></a>
+                        <a class="snimg" href="#"><img src="img/icon4.png" alt=""></a>
+                        <a class="snimg" href="#"><img src="img/icon5.png" alt=""></a>
+                    </div>
+
+                    <div class="inpbox">
+                        <input type="text" class="txt2" name maxlength="15" placeholder="Your Email...">
+                        <button>SIGN UP</button>
+                    </div>
+
+                    <p>Don’t have an account?<br>Sign up to register for events, earn points, and more!</p>
+                </div>
+            </div>
+
+            <div class="foobox2">
+                <p>Copyright © Genesis Expo 2018 - <span>Ji-hye Yun</span>2021.<br>All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

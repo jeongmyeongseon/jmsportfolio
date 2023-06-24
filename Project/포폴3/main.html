@@ -1,1243 +1,606 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/common.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <title>Document</title>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/common_max799.css" rel="stylesheet">
+	<link href="css/common_min800.css" rel="stylesheet">
+	<link href="css/common_min1170.css" rel="stylesheet">
+	<link href="css/main_max799.css" rel="stylesheet">
+	<link href="css/main_min800.css" rel="stylesheet">
+	<link href="css/main_min1170.css" rel="stylesheet">
+	<title></title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			$(".a").click(function(){
+				$(".b").slideToggle();
+			});
 
+			$(window).resize(function(){
+				if(window.innerWidth>=800){
+					$(".b").show();
+				}
+
+				if(window.innerWidth<=799){
+					$(".b").hide();
+				}
+			});
+
+		});
+	</script>
+
+	
 </head>
-
 <body>
-    <div id="wrap">
-        <header>
-            <nav id="upper_nav">
-                <div class="upper_nav_center">
-                    <ul class="sort">
-                        <li><a href="">웹툰/만화</a></li>
-                        <li>&middot;</li>
-                        <li><a href="">웹소설</a></li>
-                        <li>&middot;</li>
-                        <li><a href="" style="color: #141414;">도서</a></li>
-                        <li>&middot;</li>
-                        <li><a href="">셀렉트</a></li>
-                    </ul>
+	<div id="wrap-top">
+		<header>
+			<div class="logobox">
+				<div class="logo">
+					<img src="img/logo.png" alt="logo" class="logo-a">
+				</div>
+				<img src="img/3.png" alt="아이콘" class="a">
+			</div>
+			<nav class="b">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">UMF</a></li>
+					<li><a href="#">LINEUPS</a></li>
+					<li><a href="#">TICKETS</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">CONTACTS</a></li>
+				</ul>
+			</nav>
+			<div class="btnbox">
+				<img src="img/search.png" alt="" class="btn">
+				<button class="btn_1">GET TICKET</button>
+			</div>
+		</header>
 
-                    <ul class="login">
-                        <li><a href="">회원가입</a></li>
-                        <li>&middot;</li>
-                        <li><a href="">로그인</a></li>
-                    </ul>
-                </div>
-            </nav>
+	</div>
+	<div id="slider">
+		<h1>[MARCH 26-28, B.F PARK MIAMI, Live Show]</h1>
+		<p>Uultra Worldwide, the world’s largest music festival brand, will return to India after a three year hiatus with its signature event series Road To Ultra.</p>
+		<div class="btnbox1">
+			<button class="btn_2">GET TICKET</button>
+			<button class="btn_3">GET INFO</button>
+		</div>
+	</div>
 
-            <nav id="lower_nav">
-                <div class="title_box">
-                    <div class="logo"><img src="img/logo.jpg" alt=""></div>
-                    <div class="title">
-                        <h1>도서</h1>
-                    </div>
-                </div>
-                <div class="category_box">
-                    <div class="mypage">
-                        <div class="search">
-                            <a href=""><img src="img/search.png" alt=""></a>
-                            <input type="text">
-                        </div>
-                        <ul class="ball_icon">
-                            <li><img src="img/1.jpg" alt="종"></li>
-                            <li><img src="img/2.jpg" alt="장바구니"></li>
-                            <li><img src="img/3.jpg" alt="책"></li>
-                            <li><img src="img/4.jpg" alt="마이페이지"></li>
-                        </ul>
-                    </div>
-                    <div class="category">
-                        <a href="">
-                            <img src="img/33.png" alt="">
-                            <span class="category_text">전체 카테고리</span>
-                        </a>
-                    </div>
-                </div>
-            </nav>
+	<div id="wrap">
+		<section id="about">
+			<div class="bigbox">
+				<div class="abox1">
+					<article>
+						<img src="img/about1.jpg" alt="">
+					</article>
+					<article>
+						<img src="img/about2.jpg" alt="">
+					</article>
+					<article>
+						<img src="img/about3.jpg" alt="">
+					</article>
+				</div>
+				<div class="abox2">
+					<h2>ABOUT</h2>
+					<div class="textbox">
+						<h4>[About Festival]</h4>
+						<h3>Welcome to the worldwide fest UMF 2021</h3>
+						<p>Ultra Music Festival has unveiled the artists who will be performing at the Live Stage in Miami ! This year features a collection of talented acts that you won’t want to miss. Take note of the order of performances by day and get your tickets now !</p>
+						<button class="btn_4">READ MORE</button>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <nav id="bottom_nav">
-                <ul>
-                    <li><a href="" style="color:aliceblue">추천</a></li>
-                    <li><a href="">리디ONLY</a></li>
-                    <li><a href="">이벤트</a></li>
-                    <li><a href="">대여</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <section>
-            <!------------ SLIDER ------------>
-            <div class="slider">
-                <ul>
-                    <li class="slide">
-                        <img src="./img/slider1.jpg" alt="slider1">
-                        <div class="slider_textbox">
-                            <div class="minibox">
-                                <img src="./img/대여.png" alt="대여">
-                            </div>
-                            <h1 class="slider_title">
-                                9월에도 다 되는 <br>
-                                다대여 책방과 함께
-                            </h1>
-                            <p class="slider_desc">
-                                새로운 신간&베스트셀러로 찾아왔어요!
-                            </p>
-                        </div>
-                        <div class="slider_numder">
-                            <p><span>1</span>/10</p>
-                        </div>
-                    </li>
-                    <li class="slide">
-                        <img src="img/slider2.webp" alt="slider2">
-                        <div class="slider_textbox">
-                            <div class="minibox"></div>
-                            <h1 class="slider_title"></h1>
-                            <p class="slider_desc"></p>
-                        </div>
-                        <div class="slider_numder"></div>
-                    </li>
-                    <li class="slide">
-                        <img src="img/slider3.webp" alt="slider3">
-                        <div class="slider_textbox">
-                            <div class="minibox"></div>
-                            <h1 class="slider_title"></h1>
-                            <p class="slider_desc"></p>
-                        </div>
-                        <div class="slider_numder"></div>
-                    </li>
-                    <li class="slide">
-                        <img src="img/slider4.webp" alt="slider4">
-                        <div class="slider_textbox">
-                            <div class="minibox"></div>
-                            <h1 class="slider_title"></h1>
-                            <p class="slider_desc"></p>
-                        </div>
-                        <div class="slider_numder"></div>
-                    </li>
-                    <li class="slide">
-                        <img src="img/slider5.webp" alt="slider5">
-                        <div class="slider_textbox">
-                            <div class="minibox"></div>
-                            <h1 class="slider_title"></h1>
-                            <p class="slider_desc"></p>
-                        </div>
-                        <div class="slider_numder"></div>
-                    </li>
-                    <li class="slide">
-                        <img src="img/slider6.webp" alt="slider6">
-                        <div class="slider_textbox">
-                            <div class="minibox"></div>
-                            <h1 class="slider_title"></h1>
-                            <p class="slider_desc"></p>
-                        </div>
-                        <div class="slider_numder"></div>
-                    </li>
-                    <li class="slide">
-                        <img src="img/slider7.webp" alt="slider7">
-                        <div class="slider_textbox">
-                            <div class="minibox"></div>
-                            <h1 class="slider_title"></h1>
-                            <p class="slider_desc"></p>
-                        </div>
-                        <div class="slider_numder"></div>
-                    </li>
-                    <li class="slide">
-                        <img src="img/slider8.webp" alt="slider8">
-                        <div class="slider_textbox">
-                            <div class="minibox"></div>
-                            <h1 class="slider_title"></h1>
-                            <p class="slider_desc"></p>
-                        </div>
-                        <div class="slider_numder"></div>
-                    </li>
-                    <li class="slide">
-                        <img src="img/slider9.webp" alt="slider9">
-                        <div class="slider_textbox">
-                            <div class="minibox"></div>
-                            <h1 class="slider_title"></h1>
-                            <p class="slider_desc"></p>
-                        </div>
-                        <div class="slider_numder"></div>
-                    </li>
-                    <li class="slide">
-                        <img src="img/slider10.webp" alt="slider10">
-                        <div class="slider_textbox">
-                            <div class="minibox"></div>
-                            <h1 class="slider_title"></h1>
-                            <p class="slider_desc"></p>
-                        </div>
-                        <div class="slider_numder"></div>
-                    </li>
-                </ul>
-                <div class="prev_btn_slider">
-                    <img src="./img/arrow-left-s.png" alt="left">
-                </div>
-                <div class="next_btn_slider">
-                    <img src="./img/arrow-right-s.png" alt="right">
-                </div>
-            </div>
 
-            <!------------ ICON COLLECTION ------------>
-            <div class="icon_collection">
-                <ul>
-                    <li>
-                        <div class="imgbox"><img src="img/N1.png" alt=""></div>
-                        <h6 class="icon_title">신간</h6>
-                    </li>
-                    <li>
-                        <div class="imgbox"><img src="img/V2.png" alt=""></div>
-                        <h6 class="icon_title">이벤트 모음</h6>
-                    </li>
-                    <li>
-                        <div class="imgbox"><img src="img/B3.png" alt=""></div>
-                        <h6 class="icon_title">베스트셀러</h6>
-                    </li>
-                    <li>
-                        <div class="imgbox"><img src="img/Y6.png" alt=""></div>
-                        <h6 class="icon_title">신간 캘린더</h6>
-                    </li>
-                    <li>
-                        <div class="imgbox"><img src="img/C7.png" alt=""></div>
-                        <h6 class="icon_title">위클리 쿠폰</h6>
-                    </li>
-                    <li>
-                        <div class="imgbox"><img src="img/P8.png" alt=""></div>
-                        <h6 class="icon_title">리디페이퍼</h6>
-                    </li>
-                    <li>
-                        <div class="imgbox"><img src="img/h7.webp" alt=""></div>
-                        <h6 class="icon_title">혜택지도</h6>
-                    </li>
-                </ul>
-            </div>
+		<section id="count">
+			<div class="cobox">
+				<div class="cstbox1">
+					<h3>Count <span>Every Second</span> Until the Event</h3>
+				</div>
+				<div class="cstbox2">
+					<h1>EXPIRED</h1>
+					<h4>[March 26, 27, 28 — 2021 Bayfront Park Downtown Miami, FL]</h4>
+				</div>
+			</div>
+		</section>
 
-            <!------------ DISCOVERY ------------>
-            <div class="discovery">
-                <h2 class="section_title">오늘, 리디의 발견</h2>
-                <div class="discovery_slider">
-                    <ul>
-                        <li>
-                            <div class="discovery_imgbox">
-                                <div class="discovery_colorbox"><img src="" alt=""></div>
-                            </div>
-                            <div class="discovery_textbox">
-                                <p class="discovery_desc">"우리는 유령인가요?"<br>쇳밥 먹는 청년들의 출사표</p>
-                                <h4 class="discovery_title"></h4>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="discovery_imgbox">
-                                <div class="discovery_colorbox"><img src="" alt=""></div>
-                            </div>
-                            <div class="discovery_textbox">
-                                <p class="discovery_desc"><미드나잇 라이브러리>저자의<br>삶의 평온을 위한 에세이</p>
-                                <h4 class="discovery_title"></h4>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="discovery_imgbox">
-                                <div class="discovery_colorbox"><img src="" alt=""></div>
-                            </div>
-                            <div class="discovery_textbox">
-                                <p class="discovery_desc">고금리인 지금!<br>가장 효율적인 대출 방법은?</p>
-                                <h4 class="discovery_title"></h4>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="discovery_imgbox">
-                                <div class="discovery_colorbox"><img src="" alt=""></div>
-                            </div>
-                            <div class="discovery_textbox">
-                                <p class="discovery_desc">원작으로 먼저 보는<br>드라마<조선 정신과 의사 유세풍></p>
-                                <h4 class="discovery_title"></h4>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="discovery_imgbox">
-                                <div class="discovery_colorbox"><img src="" alt=""></div>
-                            </div>
-                            <div class="discovery_textbox">
-                                <p class="discovery_desc">모든 것이 무너져도<br>그 시간 역시 '끝'은 있다.</p>
-                                <h4 class="discovery_title"></h4>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="discovery_imgbox">
-                                <div class="discovery_colorbox"><img src="" alt=""></div>
-                            </div>
-                            <div class="discovery_textbox">
-                                <p class="discovery_desc"><보건교사 안은영>정세랑 작가의<br>가장 과감한 미니픽션</p>
-                                <h4 class="discovery_title"></h4>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="prev_btn_discovery">
-                        <img src="./img/arrow-left-s.png" alt="left">
-                    </div>
-                    <div class="next_btn_discovery">
-                        <img src="./img/arrow-right-s.png" alt="right">
-                    </div>
-                </div>
-            </div>
 
-            <!------------ POPULAR ------------>
-            <div class="popular">
-                <h2 class="section_title">지금 많이 읽고 있는 책</h2>
-                <div class="popular_slider">
-                    <ul>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">1</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(628)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">2</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">3</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.9</span><span class="scope2">(136)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">4</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(1,022)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">5</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(3,716)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">6</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(2,648)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">7</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.8</span><span class="scope2">(1,275)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">8</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(29)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">9</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(1,032)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">10</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(230)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">11</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.5</span><span class="scope2">(451)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">12</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.8</span><span class="scope2">(484)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">13</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(452)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">14</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(442)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">15</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(314)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">16</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.8</span><span class="scope2">(25)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">17</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.3</span><span class="scope2">(6,117)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">18</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(19)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                    </ul>
-                    <div class="prev_btn_pobe">
-                        <img src="./img/arrow-left-s.png" alt="left">
-                    </div>
-                    <div class="next_btn_pobe">
-                        <img src="./img/arrow-right-s.png" alt="right">
-                    </div>
-                </div>
-            </div>
+		<section id="yout">
+			<div class="vidbox">
+				<div class="vvbox">
+					<iframe width="1021" height="431" src="https://www.youtube.com/embed/es9m6LFK6DI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
 
-            <!------------ LATEST ------------>
-            <div class="latest">
-                <h2 class="section_title">새로 나온 책</h2>
-                <div class="latest_slider">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="prev_btn_latest">
-                        <img src="./img/arrow-left-s.png" alt="left">
-                    </div>
-                    <div class="next_btn_latest">
-                        <img src="./img/arrow-right-s.png" alt="right">
-                    </div>
-                </div>
-            </div>
 
-            <!------------ BESTSELLER ------------>
-            <div class="bestseller">
-                <h2 class="section_title">베스트셀러</h2>
-                <div class="bestseller_slider">
-                    <ul>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">1</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.9</span><span class="scope2">(136)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">2</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.4</span><span class="scope2">(17)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">3</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.9</span><span class="scope2">(15)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">4</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.8</span><span class="scope2">(28)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">5</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(2,648)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">6</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.1</span><span class="scope2">(508)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">7</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(623)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">8</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(3)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">9</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(230)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">10</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.1</span><span class="scope2">(44)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">11</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.5</span><span class="scope2">(85)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">12</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.3</span><span class="scope2">(12)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">13</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.4</span><span class="scope2">(1,438)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">14</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">5.0</span><span class="scope2">(2)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">15</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.0</span><span class="scope2">(8)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <ol>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">16</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.0</span><span class="scope2">(4)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">17</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(2,115)</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="content_thumbnail_small"></div>
-                                    <div class="content_orber">18</div>
-                                    <div class="content_text">
-                                        <h5 class="h_text"></h5>
-                                        <p></p>
-                                        <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">5.0</span><span class="scope2">(3)</span></div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </li>
-                    </ul>
-                    <div class="prev_btn_pobe">
-                        <img src="./img/arrow-left-s.png" alt="left">
-                    </div>
-                    <div class="next_btn_pobe">
-                        <img src="./img/arrow-right-s.png" alt="right">
-                    </div>
-                </div>
-            </div>
+		<section id="what">
+			<div class="atbox">
+				<div class="bigbox">
+					<div class="inbox">
+						<h2>SCHEDULE</h2>
+					</div>
+					<div class="inbox1">
+						<h4>[Our Timetable]</h4>
+						<h3>At What Time?</h3>
+						<p>Ultra Music Festival has announced the Phase 2 Lineup for the 22nd edition of the festival. And, UMF is a three-day electronic music festival in Downtown Miami, Florida.</p>
+					</div>
+				</div>
 
-            <!------------ MDSPICK ------------>
-            <div class="mdspick">
-                <h2 class="section_title">MD's PICK</h2>
-                <div class="mdspick_slider">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.0</span><span class="scope2">(1)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">5.0</span><span class="scope2">(3)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(111)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(28)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(51)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">5.0</span><span class="scope2">(2)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.5</span><span class="scope2">(41)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">3.9</span><span class="scope2">(20)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(19)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">3.3</span><span class="scope2">(25)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="prev_btn_ridi">
-                        <img src="./img/arrow-left-s.png" alt="left">
-                    </div>
-                    <div class="next_btn_ridi">
-                        <img src="./img/arrow-right-s.png" alt="right">
-                    </div>
-                </div>
-            </div>
+				<div class="daybox">
+					<div class="mibox">
+						<div class="mibox1">
+							<h3>First Day</h3>
+							<p>Mar 26, 2021</p>
+						</div>
 
-            <!------------ RECOMMEND ------------>
-            <div class="recommend">
-                <h2 class="section_title">리디북스토어 추천도서</h2>
-                <div class="recommend_slider">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">5.0</span><span class="scope2">(1)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate1"><img src="./img/gray.png" alt="star"><span class="scope1">0</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.5</span><span class="scope2">(33)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.4</span><span class="scope2">(17)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.6</span><span class="scope2">(71)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.0</span><span class="scope2">(1)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.3</span><span class="scope2">(144)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.7</span><span class="scope2">(12)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">3.5</span><span class="scope2">(12)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.5</span><span class="scope2">(40)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">3.9</span><span class="scope2">(124)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="content_thumbnail_large"></div>
-                                <div class="content_text">
-                                    <h5></h5>
-                                    <p></p>
-                                    <div class="content_rate"><img src="./img/st.jpg" alt="star"><span class="scope1">4.2</span><span class="scope2">(54)</span></div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="prev_btn_ridi">
-                        <img src="./img/arrow-left-s.png" alt="left">
-                    </div>
-                    <div class="next_btn_ridi">
-                        <img src="./img/arrow-right-s.png" alt="right">
-                    </div>
-                </div>
-            </div>
-        </section>
+						<div class="mibox2">
+							<h3>Second Day</h3>
+							<p>Mar 27, 2021</p>
+						</div>
 
-        <footer>
-            <div class="footer_upper">
-                <div class="footer_upper_cs">
-                    <div class="cs_content">
-                        <img src="img/h1.jpg" alt="">
-                        <span>고객센터</span>
-                    </div>
-                    <div class="cs_content">
-                        <img src="img/h2.jpg" alt="">
-                        <span>공지사항</span>
-                    </div>
-                </div>
+						<div class="mibox2">
+							<h3>Last Day</h3>
+							<p>Mar 28, 2021</p>
+						</div>
+					</div>
+					<table>
+						<tbody>
+							<tr>
+								<th>"10:00"<br>"~"<br>"13:00"</th>
+								<td>
+									<img src="img/time1.jpg" alt="">
+								</td>
+								<td>
+									<span>Indi Band Stage</span>
+									<br>
+									<p>There are a variety of indie band stages from more than 30 teams that will make your day start sweet and lively.</p>
+								</td>
+								<td>
+									<button>READ MORE</button>
+								</td>
+							</tr>
 
-                <div class="footer_upper_about">
-                    <ul>
-                        <li>
-                            <h3>서비스</h3>
-                            <ul>
-                                <li><a href="">리디페이퍼</a></li>
-                                <li><a href="">제휴카드</a></li>
-                                <li><a href="">뷰어 다운로드</a></li>
-                                <li><a href="">CP사이트</a></li>
-                                <li><a href="">리디셀렉트 B2B</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>기타 문의</h3>
-                            <ul>
-                                <li><a href="">콘텐츠 제공 문의</a></li>
-                                <li><a href="">사업 제휴 문의</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>회사</h3>
-                            <ul>
-                                <li><a href="">회사소개</a></li>
-                                <li><a href="">인재채용</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+							<tr>
+								<th>"13:10"<br>"~"<br>"16:00"</th>
+								<td>
+									<img src="img/time2.jpg" alt="">
+								</td>
+								<td>
+									<span>Solo/Team Performance</span>
+									<br>
+									<p>In the afternoon, you can see performances of various genres of solo and team from all over the country. It will make your eyes happy.</p>
+								</td>
+								<td>
+									<button>READ MORE</button>
+								</td>
+							</tr>
 
-                <div class="footer_upper_sns">
-                    <ul>
-                        <li><a href=""><img src="img/f.jpg" alt=""></a></li>
-                        <li><a href=""><img src="img/in.jpg" alt=""></a></li>
-                        <li><a href=""><img src="img/y.jpg" alt=""></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer_lower">
-                <div class="footer_lower_about">
-                    <h5>리디(주) 사업자 정보</h5>
-                    <img src="./img/downarrow.png" alt="아래 화살표">
-                    <div class="about_content">
-                        <div class="about_box">
-                            <dt>대표자</dt>
-                            <dd>배기식</dd>
-                        </div>
-                        <div class="about_box">
-                            <dt>사업자 등록번호</dt>
-                            <dd>120-87-27435</dd>
-                        </div>
-                        <div class="about_box">
-                            <dt>통신판매업 신고번호</dt>
-                            <dd>제 2009-서울강남 35-02139호</dd>
-                        </div>
-                        <div class="about_box">
-                            <dt>이메일</dt>
-                            <dd>help@ridi.com</dd>
-                        </div>
-                        <div class="about_box">
-                            <dt>대표전화</dt>
-                            <dd>1644-0331</dd>
-                        </div>
-                        <div class="about_box">
-                            <dt>주소</dt>
-                            <dd>서울시 강남구 역삼동 702-28 어반벤치빌딩 10층(테헤란로 325)</dd>
-                        </div>
-                    </div>
-                </div>
+							<tr>
+								<th>"16:10"<br>"~"<br>"21:00"</th>
+								<td>
+									<img src="img/time3.jpg" alt="">
+								</td>
+								<td>
+									<span>Hot Line-up Stage</span>
+									<br>
+									<p>It's time to meet about 10 famous artists, the flower of this festival. A special lineup that will heat up the night!</p>
+								</td>
+								<td>
+									<button>READ MORE</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>	
+			</div>
+		</section>
 
-                <div class="footer_lower_info">
-                    <ul>
-                        <li><a href="#">이용약관</a></li>
-                        <li>|</li>
-                        <li><a href="#">개인정보 처리방침</a></li>
-                        <li>|</li>
-                        <li><a href="#">청소년보호정책</a></li>
-                        <li>|</li>
-                        <li><a href="#">사업자정보확인</a></li>
-                    </ul>
-                    <p>©RIDI Corp.</p>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <script>
-        let color=["rgb(67, 39, 27)","rgb(4, 52, 148)","rgb(142, 16, 21)","rgb(14, 68, 117)","rgb(10, 88, 61)","rgb(6, 123, 126)"]
-        
-        for(let i = 0; i <color.length; i++)
-        document.getElementsByClassName("discovery_colorbox")[i].style.backgroundImage="linear-gradient(transparent 30%,"+ color[i]+ "0px)";
-    </script>
 
-    <script src="./js/discovery.js"></script>
-    <script src="./js/popular.js"></script>
-    <script src="./js/latest.js"></script>
-    <script src="./js/bestseller.js"></script>
-    <script src="./js/mdspick.js"></script>
-    <script src="./js/recommend.js"></script>
+
+
+
+		<section id="brand">
+			<div class="brandbox">
+				<img src="img/b1.png" alt="">
+			</div>
+			<div class="brandbox">
+				<img src="img/b2.png" alt="">
+			</div>
+			<div class="brandbox">
+				<img src="img/b3.png" alt="">
+			</div>
+			<div class="brandbox">
+				<img src="img/b4.png" alt="">
+			</div>
+			<div class="brandbox">
+				<img src="img/b5.png" alt="">
+			</div>
+			<div class="brandbox">
+				<img src="img/b6.png" alt="">
+			</div>
+		</section>
+
+
+
+
+		<section id="icon">
+			<div class="icbox">
+				<div class="img_box">
+					<div class="iconbox">
+						<img src="img/icon1.png" alt="">
+						<img src="img/icon2.png" alt="">
+						<img src="img/icon3.png" alt="">
+						<img src="img/icon4.png" alt="">
+					</div>
+				</div>
+				<img src="img/i1.jpg" alt="" class="i">
+			</div>
+
+
+
+			<div class="icbox">
+				<div class="img_box">
+					<div class="iconbox">
+						<img src="img/icon1.png" alt="">
+						<img src="img/icon2.png" alt="">
+						<img src="img/icon3.png" alt="">
+						<img src="img/icon4.png" alt="">
+					</div>
+				</div>
+				<img src="img/i2.jpg" alt="" class="i">
+			</div>
+
+			<div class="icbox">
+				<div class="img_box">
+					<div class="iconbox">
+						<img src="img/icon1.png" alt="">
+						<img src="img/icon2.png" alt="">
+						<img src="img/icon3.png" alt="">
+						<img src="img/icon4.png" alt="">
+					</div>
+				</div>
+				<img src="img/i3.jpg" alt="" class="i">
+			</div>
+
+			<div class="icbox">
+				<div class="img_box">
+					<div class="iconbox">
+						<img src="img/icon1.png" alt="">
+						<img src="img/icon2.png" alt="">
+						<img src="img/icon3.png" alt="">
+						<img src="img/icon4.png" alt="">
+					</div>
+				</div>
+				<img src="img/i4.jpg" alt="" class="i">
+			</div>
+
+			<div class="icbox">
+				<div class="img_box">
+					<div class="iconbox">
+						<img src="img/icon1.png" alt="">
+						<img src="img/icon2.png" alt="">
+						<img src="img/icon3.png" alt="">
+						<img src="img/icon4.png" alt="">
+					</div>
+				</div>
+				<img src="img/i5.jpg" alt="" class="i">
+			</div>
+		</section>
+
+
+
+
+		<section id="tickets">
+			<div class="ticbox">
+				<div class="tibox">
+					<h2>TICKETS</h2>
+				</div>
+				<div class="ckbox">
+					<h4>[Choose Your Plan]</h4>
+					<h3>About Prices</h3>
+				</div>
+			</div>
+
+
+			<div class="ketsbox">
+				<div class="tkbox">
+					<div class="topbox">
+						<div class="shape"></div>
+						<h3>$299.95</h3>
+						<h4>[Early Bird]</h4>
+						<div class="tier">1 TIER</div>
+					</div>
+
+
+					<div class="bottombox">
+						<ul>
+							<li>By Registration Only</li>
+							<li>Very limited tickets.</li>
+							<li>First come first served</li>
+							<li>Closing 12am January 31</li>
+						</ul>
+						<button class="bt">GET TICKET</button>
+					</div>
+				</div>
+
+
+				<div class="tkbox">
+					<div class="topbox">
+						<div class="shape"></div>
+						<h3>$324.95</h3>
+						<h4>[Advance]</h4>
+						<div class="tier">2 TIER</div>
+					</div>
+
+
+					<div class="bottombox">
+						<ul>
+							<li>Limited tickets.</li>
+							<li>First come first served</li>
+							<li>Available to everyone</li>
+							<li>Closing 12am March 25</li>
+						</ul>
+						<button class="bt">GET TICKET</button>
+					</div>
+				</div>
+
+				<div class="tkbox">
+					<div class="topbox">
+						<div class="shape"></div>
+						<h3>$349.95</h3>
+						<h4>[Regular]</h4>
+						<div class="tier">3 TIER</div>
+					</div>
+
+
+					<div class="bottombox">
+						<ul>
+							<li>+ Payment Plan</li>
+							<li>First come first served</li>
+							<li>Available to everyone</li>
+							<li>Closing 12am March 25</li>
+						</ul>
+						<button class="bt">GET TICKET</button>
+					</div>
+				</div>
+
+				<div class="tkbox">
+					<div class="topbox1">
+						<div class="shape1"></div>
+						<h3>$999.95</h3>
+						<h4>[SPECIAL]</h4>
+						<div class="tier1">VIP</div>
+					</div>
+
+
+					<div class="bottombox">
+						<ul>
+							<li>Selection Only</li>
+							<li>Limited tickets</li>
+							<li>First come first served</li>
+							<li>Open 12pm March 11</li>
+						</ul>
+						<button class="bt">GET TICKET</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<section id="guests">
+			<div class="gtextbox">
+				<div class="back">
+					<h2>GUESTS</h2>
+				</div>
+				<div class="upbox">
+					<h4>[Our Rockstars]</h4>
+					<h3>Special Guests</h3>
+					<p>The best rock stars UMF has prepared! Please look forward to their special performance.</p>
+				</div>
+			</div>
+			<div class="gustbox">
+				<div class="gubox1">
+					<div class="ggbox">
+						<div class="sns">
+							<img src="img/sns1.png" alt="">
+							<img src="img/sns2.png" alt="">
+							<img src="img/sns3.png" alt="">
+							<img src="img/sns4.png" alt="">
+						</div>
+					</div>
+					<h3>Jamie Jones</h3>
+					<h4>[Musician]</h4>
+				</div>
+
+				<div class="gubox2">
+					<div class="ggbox">
+						<div class="sns">
+							<img src="img/sns1.png" alt="">
+							<img src="img/sns2.png" alt="">
+							<img src="img/sns3.png" alt="">
+							<img src="img/sns4.png" alt="">
+						</div>
+					</div>
+					<h3>Porter Robinson</h3>
+					<h4>[Musician]</h4>
+				</div>
+
+				<div class="gubox3">
+					<div class="ggbox">
+						<div class="sns">
+							<img src="img/sns1.png" alt="">
+							<img src="img/sns2.png" alt="">
+							<img src="img/sns3.png" alt="">
+							<img src="img/sns4.png" alt="">
+						</div>
+					</div>
+					<h3>Underworld</h3>
+					<h4>[Band]</h4>
+				</div>
+
+				<div class="gubox4">
+					<div class="ggbox">
+						<div class="sns">
+							<img src="img/sns1.png" alt="">
+							<img src="img/sns2.png" alt="">
+							<img src="img/sns3.png" alt="">
+							<img src="img/sns4.png" alt="">
+						</div>
+					</div>
+					<h3>Marshmello</h3>
+					<h4>[EDM Artist]</h4>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<section id="today">
+			<div class="day">
+				<span class="toto">365</span>
+				<h4>TODAY VISITORS</h4>
+			</div>
+
+			<div class="day">
+				<span class="toto">99</span>
+				<h4>SHARED SNS</h4>
+			</div>
+
+			<div class="day">
+				<span class="toto">178</span>
+				<h4>BLOG CLICKS</h4>
+			</div>
+
+			<div class="day">
+				<span class="toto">221</span>
+				<h4>VIDEO CLICKS</h4>
+			</div>
+		</section>
+
+
+
+		<section id="news">
+			<div class="nebox">
+				<div class="ntextbox1">
+					<h2>NEWS</h2>
+				</div>
+				<div class="ntextbox2">
+					<h4>[Our Blog]</h4>
+					<h3>Latest Posts</h3>
+				</div>
+			</div>
+			<div class="newbox">
+				<div class="nnbox">
+					<div class="nnimbox">
+						<img src="img/b1.jpg">
+					</div>
+					<div class="nntxbox">
+						<h4>[January 14, 2021]</h4>
+						<p>Discover the Spring Music Festival for you</p>
+						<button class="bbtn">
+							<img src="img/more2.png">
+						</button>
+					</div>
+				</div>
+
+
+
+				<div class="nnbox">
+					<div class="nnimbox">
+						<img src="img/b2.jpg">
+					</div>
+					<div class="nntxbox">
+						<h4>[December 29, 2020]</h4>
+						<p>Vote for your favorite live act of 2020</p>
+						<button class="bbtn">
+							<img src="img/more2.png">
+						</button>
+					</div>
+				</div>
+
+
+				<div class="nnbox">
+					<div class="nnimbox">
+						<img src="img/b3.jpg">
+					</div>
+					<div class="nntxbox">
+						<h4>[November, 2020]</h4>
+						<p>Songkick Live: Dashboard confessional</p>
+						<button class="bbtn">
+							<img src="img/more2.png">
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<footer>
+		<div class="foobox1">
+			<div class="ftbox1">
+				<div class="logoobox">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="lotxbox">
+					<span class="sptx">March 26, 27, 28 — 2021<br>B.F Park, Downtown Miami, FL</span>
+					<p>Ultra Music Festival is a three-day electronic music festival in Down-town Miami, Florida. For more info, visit the official website.</p>
+				</div>
+			</div>
+			<div class="ftbox2">
+				<h5>WORLDWIDE</h5>
+				<ul>
+					<li><a href="#">Ultra Worldwide</a></li>
+					<li><a href="#">Merch By UMF</a></li>
+					<li><a href="#">Road to Worldwide</a></li>
+					<li><a href="#">UMF Films & Gallery View</a></li>
+					<li><a href="#">UMF TV & Radio View</a></li>
+					<li><a href="#">Previous & Resistance Lineup</a></li>
+				</ul>
+			</div>
+			<div class="ftbox2">
+				<h5>INFORMATION</h5>
+				<ul>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Privacy & Terms</a></li>
+					<li><a href="#">301 BB. Miami FL, 33132</a></li>
+					<li><a href="#">Tell: +1 305-250-2943</a></li>
+					<li><a href="#">Fax: +1 305-854-2943</a></li>
+					<li><a href="#">Email: umfinfo@ci.miami.fl.us</a></li>
+				</ul>
+			</div>
+			<div class="ftbox3">
+				<h5>NEWSLETTER</h5>
+				<div class="snbox">
+					<a class="snimg" href="#"><img src="img/icon1.png" alt=""></a>
+					<a class="snimg" href="#"><img src="img/icon2.png" alt=""></a>
+					<a class="snimg" href="#"><img src="img/icon3.png" alt=""></a>
+					<a class="snimg" href="#"><img src="img/icon4.png" alt=""></a>
+					<a class="snimg" href="#"><img src="img/icon5.png" alt=""></a>
+				</div>
+
+				<div class="inpbox">
+					<input type="text" class="txt2" name maxlength="15" placeholder="Your Email...">
+					<button>SIGN UP</button>
+				</div>
+
+				<p>Don’t have an account?<br>Sign up to register for events, earn points, and more!</p>
+			</div>
+		</div>
+
+		<div class="foobox2">
+			<p>Copyright © Genesis Expo 2018 - <span>Ji-hye Yun</span>2021.<br>All Rights Reserved.</p>
+		</div>
+	</footer>
+
+
 </body>
-
 </html>
