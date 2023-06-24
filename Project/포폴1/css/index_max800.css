@@ -1,0 +1,146 @@
+
+@media(max-width:800px) {
+    html,body {
+        font-size: 13px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .xi-bars {
+        display: block;
+        font-size: 2rem;
+    }
+    nav {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgb(60, 105, 194);
+        width: 100%;
+        height: 100%;
+        z-index: 500;
+    }
+
+    nav .inner {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-top: 200px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu li {
+        padding: 5px 0px;
+    }
+
+    .menu > li.home .menu_list {
+        opacity: 1;
+        background-color: transparent;
+        border-top: none;
+    }
+
+    .menu li:hover {
+        background-color: #fff;
+    }
+
+    .menu > li:hover .menu_list {
+        opacity: 1;
+        background-color: transparent;
+        border-top: none;
+        color: rgb(60, 105, 194);
+    }
+
+    .menu_list {
+        border-top: none;
+        font-size: 2rem;
+    }
+
+    .xi-close {
+        position: fixed;
+        left: 93.5%;
+        top: 3.7%;
+        display: none;
+        font-size: 2rem;
+        color: #fff;
+        z-index: 600;
+    }
+
+    .submenu li {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .submenu li a {
+        padding: 5px 0px;
+        color: rgb(94, 134, 212);
+    }
+
+    .submenu li:hover {
+        background-color: rgb(94, 134, 212);
+        opacity: 0.4;
+    }
+
+    .submenu li:hover a {
+        color: #fff;
+    }
+
+    .snslist {
+        display: none;
+    }
+
+    .swiper-slide .inner {
+        text-align: center;
+    }
+
+    .tab-section .inner {
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        padding-left: 0;
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .service ul {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_bottom .sns {
+        display: none;
+    } 
+
+    .footer_top .inner {
+        display: block;
+        text-align: center;
+    }
+
+    .footer_top .inner>div {
+        border-bottom: 1px dashed #fff;
+        padding: 30px 0px;
+    }
+
+    .footer_top .inner>div:last-child {
+        border: 0;
+        padding-bottom: 0;
+    }
+
+    .footer_top .inner>div:first-child {
+        padding-top: 0;
+    }
+
+    .footer_top dt {
+        max-width: none;
+    }
+}

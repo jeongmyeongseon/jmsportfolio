@@ -1,0 +1,9 @@
+$('.xi-bars').click(function(){
+        $('nav').show();
+        $('.xi-close').show();
+    });
+
+    $('.xi-close').click(function(){
+        $('nav').hide();
+        $('.xi-close').hide();
+    });

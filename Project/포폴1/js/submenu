@@ -1,0 +1,8 @@
+$('.menu>li').click(function () {
+    $(this).find('.submenu').stop().slideDown(); 
+});
+
+$('.menu>li').mouseleave(function () {
+    $(this).find('.submenu').stop().slideUp();
+}); 
+

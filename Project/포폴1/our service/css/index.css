@@ -55,7 +55,6 @@ header .inner {
 
 /* nav */
 nav {
-    display: block;
     background-color: rgb(60, 105, 194);
 }
 
@@ -63,31 +62,31 @@ nav .inner {
     padding: 0;
 }
 
-.menu {
+.gnb {
     display: flex;
 }
 
-.menu > li {
+.gnb > li {
     position: relative;
 }
 
-.menu > li:hover .menu_list {
+.gnb > li:hover .gnb_list {
     background-color: rgb(94, 134, 212);
     opacity: 0.6;
     border-top: 5px solid rgb(143, 167, 216);
 }
 
-.menu > li.home .menu_list {
+.gnb > li.home .gnb_list {
     background-color: rgb(94, 134, 212);
     opacity: 0.6;
     border-top: 5px solid rgb(143, 167, 216);
 }
 
-.menu_list {
+.gnb_list {
     display: inline-block;
     color: #fff;
     padding: 20px;
-    border-top: 5px solid rgb(60, 105, 194);
+    border-top: 5px solid #32659c;
 }
 
 .submenu {
@@ -102,21 +101,12 @@ nav .inner {
     padding: 10px;
 }
 
-.submenu li a {
-    color: rgb(94, 134, 212);
-}
-
 .submenu li:hover {
-    background-color: rgb(94, 134, 212);
-    opacity: 0.4;
+    background-color: pink;
 }
 
-.submenu li:hover a {
-    color: #fff;
-}
-
-.xi-close {
-    display: none;
+.submenu li a {
+    color: rgb(60, 105, 194);
 }
 
 .snslist {

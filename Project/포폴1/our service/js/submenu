@@ -1,0 +1,6 @@
+$('.gnb>li').mouseover(function () {
+    $(this).find('.submenu').stop().slideDown(); //find는 본인의 자식요소를 찾는다
+});
+$('.gnb>li').mouseleave(function () {
+    $(this).find('.submenu').stop().slideUp();
+}); //stop을 써줘야 오류가 나지 않고 실행이됨

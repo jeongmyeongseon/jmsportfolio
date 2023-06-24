@@ -1,0 +1,9 @@
+$('.tab-menu div').click(function () {
+    $('.tab-menu div').removeClass('select');
+    $(this).addClass('select');
+
+    var num = $(this).index();
+    console.log(num);
+    $('.tab-contents div').hide();
+    $('.tab-contents div').eq(num).show();
+});
