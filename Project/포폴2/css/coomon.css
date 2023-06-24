@@ -1,0 +1,218 @@
+#wrap {
+  width: 100%;
+}
+
+.header_fixed_wrap {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  margin-top: 2.3%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.header_fixed_wrap .header_container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header_fixed_wrap .header_container .top_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.header_fixed_wrap .header_container .top_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8.5%;
+}
+
+.header_fixed_wrap .header_container .top_menu ul li {
+  font-size: 12px;
+  font-weight: 1000;
+  color: #000;
+  padding: 5px 10px 15px 10px;
+}
+
+.header_fixed_wrap .header_container .lower_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0.7%;
+}
+
+.header_fixed_wrap .header_container .lower_menu .logo {
+  width: 18%;
+  margin-left: 8.5%;
+}
+
+.header_fixed_wrap .header_container .lower_menu .menu {
+  width: 80%;
+  padding-left: 10.5%;
+}
+
+.header_fixed_wrap .header_container .lower_menu .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.header_fixed_wrap .header_container .lower_menu .menu ul .sub_nav {
+  font-size: 15px;
+  line-height: 160%;
+  font-weight: bold;
+  color: #212529;
+  padding: 15px 13px 21px 13px;
+}
+
+.header_fixed_wrap .header_container .lower_menu .menu ul .sub_nav .sub_list {
+  position: absolute;
+  bottom: -43%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+  opacity: 0.99;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.header_fixed_wrap .header_container .lower_menu .menu ul .sub_nav .sub_list li {
+  color: #212529;
+  float: left;
+  font-weight: lighter;
+  padding: 15px 15px 20px 15px;
+}
+
+.header_fixed_wrap .header_container .lower_menu .menu ul .sub_nav:hover {
+  cursor: pointer;
+}
+
+.header_fixed_wrap .header_container .lower_menu .menu ul .sub_nav:hover .sub_title {
+  color: grey;
+}
+
+.header_fixed_wrap .header_container .lower_menu .menu ul .sub_nav:hover .sub_list {
+  display: block;
+  cursor: pointer;
+}
+
+.header_fixed_wrap .header_container .lower_menu .menu ul .sub_nav:hover .sub_list .sub_list1:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.header_fixed_wrap .header_container .lower_menu .icon_menu {
+  margin-right: 7.7%;
+  width: 9%;
+}
+
+.header_fixed_wrap .header_container .lower_menu .icon_menu img {
+  padding: 10px 4px 0px 4px;
+}
+
+.header_fixed_wrap.shrink {
+  height: 115px;
+  background-color: #fff;
+  opacity: 0.8;
+  margin: 0%;
+  padding-top: 0.5%;
+}
+
+footer {
+  margin-top: 1.5%;
+  margin-bottom: 2.7%;
+  background-color: #f7f7f7;
+}
+
+footer h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+footer h6 {
+  font-size: 17px;
+  font-weight: 500;
+  color: #666;
+  line-height: 32px;
+}
+
+footer .notice {
+  width: 82%;
+  margin: 0 auto;
+  padding: 2% 0% 2% 0.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .notice .review {
+  margin-top: 5px;
+}
+
+footer .notice .custtomer_text {
+  margin-top: 13%;
+  font-size: 17px;
+  font-weight: 500;
+  color: #666;
+}
+
+footer .notice .custtomer {
+  margin-left: 24%;
+}
+
+footer .notice .bank {
+  margin-right: 15%;
+}
+
+footer .about {
+  width: 85%;
+  margin: 0 auto;
+  padding-left: 2%;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+footer .about ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2.5%;
+  padding-bottom: 2.3%;
+}
+
+footer .about ul li {
+  padding-right: 1%;
+  font-size: 12px;
+  line-height: 140%;
+}
+
+footer .address {
+  width: 83%;
+  margin: 0 auto;
+  padding-left: 0.9%;
+  margin-top: 2%;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  line-height: 180%;
+}
+/*# sourceMappingURL=coomon.css.map */

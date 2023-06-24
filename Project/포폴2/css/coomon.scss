@@ -1,0 +1,187 @@
+#wrap {
+    width: 100%;
+}
+
+.header_fixed_wrap {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    margin-top: 2.3%;
+    -webkit-text-size-adjust: 100%;
+
+    .header_container {
+        width: 100%;
+        margin: 0 auto;
+
+        .top_menu {
+            display: flex;
+            justify-content: end;
+
+            ul {
+                display: flex;
+                margin-right: 8.5%;
+
+                li {
+                    font-size: 12px;
+                    font-weight: 1000;
+                    color: #000;
+                    padding: 5px 10px 15px 10px;
+                }
+            }
+        }
+
+        .lower_menu {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0.7%;
+
+            .logo {
+                width: 18%;
+                margin-left: 8.5%;
+            }
+
+            .menu {
+                width: 80%;
+                padding-left: 10.5%;
+
+                ul {
+                    display: flex;
+                    width: 100%;
+
+                    .sub_nav {
+                        font-size: 15px;
+                        line-height: 160%;
+                        font-weight: bold;
+                        color: #212529;
+                        padding: 15px 13px 21px 13px;
+
+                        .sub_list {
+                            position: absolute;
+                            bottom: -43%;
+                            left: 0;
+                            right: 0;
+                            z-index: 1;
+                            background-color: #fff;
+                            opacity: 0.99;
+                            width: 100%;
+                            text-align: center;
+                            display: none;
+
+                            li {
+                                color: #212529;
+                                float: left;
+                                font-weight: lighter;
+                                padding: 15px 15px 20px 15px;
+                            }
+                        }
+                    }
+
+                    .sub_nav:hover {
+                        cursor: pointer;
+
+                        .sub_title {
+                            color: grey;
+                        }
+                        .sub_list {
+                            display: block;
+                            cursor: pointer;
+                            .sub_list1:hover {
+                                color: gray;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .icon_menu {
+                margin-right: 7.7%;
+                width: 9%;
+
+                img {
+                    padding: 10px 4px 0px 4px;
+                }
+            }
+        }
+    }
+}
+
+.header_fixed_wrap.shrink {
+    height: 115px;
+    background-color: #fff;
+    opacity: 0.8;
+    margin: 0%;
+    padding-top: 0.5%;
+    
+}
+
+footer {
+    margin-top: 1.5%;
+    margin-bottom: 2.7%;
+    background-color: #f7f7f7;
+    h5 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 40px;
+        line-height: 1.2;
+    }
+    h6 {
+        font-size: 17px;
+        font-weight: 500;
+        color: #666;
+        line-height: 32px;
+    }
+    .notice {
+        width: 82%;
+        margin: 0 auto;
+        padding: 2% 0% 2% 0.3%;
+        display: flex;
+        justify-content: space-between;
+        .review {
+            margin-top: 5px;
+        }
+        .custtomer_text {
+            margin-top: 13%;
+            font-size: 17px;
+            font-weight: 500;
+            color: #666;
+        }
+        .custtomer {
+            margin-left: 24%;
+        }
+        .bank {
+            margin-right: 15%;
+        }
+    }
+    .about {
+        width: 85%;
+        margin: 0 auto;
+        padding-left: 2%;
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
+        ul {
+            display: flex;
+            padding-top: 2.5%;
+            padding-bottom: 2.3%;
+            li {
+                padding-right: 1%;
+                font-size: 12px;
+                line-height: 140%;
+            }
+        }
+    }
+    .address {
+        width: 83%;
+        margin: 0 auto;
+        padding-left: 0.9%;
+        margin-top: 2%;
+        font-size: 14px;
+        font-weight: 300;
+        color: #000000;
+        line-height: 180%;
+    }
+}
